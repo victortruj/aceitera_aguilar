@@ -9,6 +9,10 @@
 
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+   <!-- icono de nustra pag -->
+  <link rel="icon" href="vistas/img/plantilla/icono-negro.png">
+
   
 <!--=====================================
 PLUGINS DE CSS
