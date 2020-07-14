@@ -53,6 +53,17 @@ CUERPO DOCUMENTO
 <!-- Site wrapper -->
 <div class="wrapper">
 
+<?php 
+
+ /*=============================================
+  CABEZOTE 
+  =============================================*/
+  
+ include "modulos/cabezote.php";
+
+
+
+ ?>
  
 
 </div>
