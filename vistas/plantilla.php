@@ -88,9 +88,19 @@ CUERPO DOCUMENTO
          $_GET["ruta"] == "reportes"){
 
         include "modulos/".$_GET["ruta"].".php";
-    }
+    
+    }else{
 
-  }
+
+      include "modulos/404.php";
+    
+      } 
+
+    }else{
+
+      include "modulos/inicio.php";
+  
+  } 
 
 
 /*=============================================
