@@ -1,3 +1,8 @@
+<?php
+
+session_start();
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -103,7 +108,8 @@ CUERPO DOCUMENTO
          $_GET["ruta"] == "clientes" ||
          $_GET["ruta"] == "ventas" ||
          $_GET["ruta"] == "crear-venta" ||
-         $_GET["ruta"] == "reportes"){
+         $_GET["ruta"] == "reportes"||
+         $_GET["ruta"] == "salir"){
 
         include "modulos/".$_GET["ruta"].".php";
     }else{
