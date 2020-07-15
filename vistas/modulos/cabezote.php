@@ -42,8 +42,8 @@ BARRA DE NAVEGACION
 
       	</a>
 	
-
 		<!-- perfil de usuario -->
+
 
 		<div class="navbar-custom-menu">
 			
