@@ -34,7 +34,7 @@
         </div>
         <div class="box-body">
           
-           <table class="table table-bordered table-striped dt-responsive tabla" width="100%">
+           <table class="table table-bordered table-striped dt-responsive tablas" width="100%">
          
         <thead>
          
@@ -267,6 +267,16 @@ MODAL AGREGAR USUARIO
           <button type="submit" class="btn btn-primary">Guardar usuario</button>
 
         </div>
+
+
+       
+        <?php
+
+          $crearUsuario = new ControladorUsuarios();
+          $crearUsuario -> ctrCrearUsuario();
+
+        ?>
+
 
       </form>
 

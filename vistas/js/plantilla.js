@@ -9,7 +9,7 @@
 Data Table
 =============================================*/
 
-$(".tabla").DataTable({
+$(".tablas").DataTable({
 
 	"language": {
 
