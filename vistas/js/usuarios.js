@@ -73,10 +73,21 @@ EDITAR USUARIO
           $("#editarNombre").val(respuesta["nombre"]);
           $("#editarUsuario").val(respuesta["usuario"]);
           $("#editarPerfil").html(respuesta["perfil"]);
-      
-   
+          $("#editarPerfil").val(respuesta["perfil"]);
+          $("#fotoActual").val(respuesta["foto"]);
 
       
+        $("#passwordActual").val(respuesta["password"]);
+
+
+        if(respuesta["foto"] != ""){
+
+        $(".previsualizar").attr("src", respuesta["foto"]);
+
+
+
+
+      }
 
     }
 
