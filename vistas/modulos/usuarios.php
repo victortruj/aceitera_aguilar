@@ -246,6 +246,7 @@ MODAL AGREGAR USUARIO
 
               <p class="help-block">Peso máximo de la foto 2MB</p>
 
+                                                                                        <!-- error internet explorer     -->
               <img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail previsualizar" width="100px">
 
             </div>
