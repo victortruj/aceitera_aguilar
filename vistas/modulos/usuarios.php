@@ -106,7 +106,7 @@ o<!-- Content Wrapper. Contains page content -->
 
 
 
-                        <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                       <button class="btn btn-danger btnEliminarUsuario" idUsuario="'.$value["id"].'" fotoUsuario="'.$value["foto"].'" usuario="'.$value["usuario"].'"><i class="fa fa-times"></i></button>
                     
 
                       
@@ -431,6 +431,16 @@ MODAL EDITAR USUARIO
   </div>
 
 </div>
+
+<?php
+
+  $borrarUsuario = new ControladorUsuarios();
+  $borrarUsuario -> ctrBorrarUsuario();
+
+?> 
+
+
+
 
 
 
