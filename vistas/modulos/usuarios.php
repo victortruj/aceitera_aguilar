@@ -1,4 +1,4 @@
-<!-- Content Wrapper. Contains page content -->
+o<!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -83,6 +83,8 @@
                   }
 
                   echo '<td>'.$value["perfil"].'</td>';
+
+                  // activar usuarios
 
                   if($value["estado"] != 0){
 
