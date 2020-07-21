@@ -291,6 +291,7 @@ class ControladorUsuarios{
 				=============================================*/
 
 				$ruta = $_POST["fotoActual"];
+																// Actualizar foto
 
 				if(isset($_FILES["editarFoto"]["tmp_name"]) && !empty($_FILES["editarFoto"]["tmp_name"])){
 
