@@ -120,7 +120,7 @@
 </div>
 
 <!--=====================================
-MODAL AGREGAR USUARIO
+MODAL AGREGAR CATEGORÍA
 ======================================-->
 
 <div id="modalAgregarCategoria" class="modal fade" role="dialog">
@@ -159,13 +159,12 @@ MODAL AGREGAR USUARIO
               
                 <span class="input-group-addon"><i class="fa fa-th"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevoCategoria" placeholder="Ingresar categoria" required>
+                <input type="text" class="form-control input-lg" name="nuevaCategoria" placeholder="Ingresar categoría" required>
 
               </div>
 
             </div>
-
-            
+  
           </div>
 
         </div>
@@ -178,9 +177,16 @@ MODAL AGREGAR USUARIO
 
           <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
 
-          <button type="submit" class="btn btn-primary">Guardar categoria</button>
+          <button type="submit" class="btn btn-primary">Guardar categoría</button>
 
         </div>
+
+        <?php
+
+          $crearCategoria = new ControladorCategorias();
+          $crearCategoria -> ctrCrearCategoria();
+
+        ?>
 
       </form>
 
@@ -189,5 +195,3 @@ MODAL AGREGAR USUARIO
   </div>
 
 </div>
-
-
