@@ -49,6 +49,18 @@
         </thead>
 
         <tbody>
+
+        <?php 
+
+         $item = null;
+         $valor = null;
+      
+         $categorias = ControladorCategorias::ctrMostrarCategorias($item, $valor);
+
+
+         ?>
+
+        
           
           <tr>
             <td>1</td>
@@ -105,9 +117,12 @@
 
           </tr>
 
-           
 
         </tbody>
+
+
+
+
 
        </table>
 
@@ -159,7 +174,8 @@ MODAL AGREGAR CATEGORÍA
               
                 <span class="input-group-addon"><i class="fa fa-th"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevaCategoria" placeholder="Ingresar categoría" required>
+                <input type="text" class="form-control input-lg" name="nuevaCategoria" placeholder="Ingresar categoría" 
+                id="nuevaCategoria" required>
 
               </div>
 
