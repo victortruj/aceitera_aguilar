@@ -12,7 +12,7 @@ $("#nuevaCategoria").change(function(){
   datos.append("validarCategoria", categoria);
 
    $.ajax({
-      url:"ajax/categoria.ajax.php",
+      url:"ajax/categorias.ajax.php",
       method:"POST",
       data: datos,
       cache: false,
@@ -23,7 +23,7 @@ $("#nuevaCategoria").change(function(){
         
         if(respuesta){
 
-          $("#nuevaCategoria").parent().after('<div class="alert alert-warning">Este usuario ya existe en la base de datos</div>');
+          $("#nuevaCategoria").parent().after('<div class="alert alert-warning">Esta categoria ya existe en la base de datos</div>');
 
           $("#nuevaCategoria").val("");
 
