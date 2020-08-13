@@ -8,7 +8,6 @@ class ModeloProductos{
 	MOSTRAR PRODUCTOS
 	=============================================*/
 
-
 	static public function mdlMostrarProductos($tabla, $item, $valor){
 
 		if($item != null){
@@ -36,6 +35,4 @@ class ModeloProductos{
 		$stmt = null;
 
 	}
-
-
 }

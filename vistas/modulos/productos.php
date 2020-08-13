@@ -34,11 +34,11 @@
 
       <div class="box-body">
         
-       <table class="table table-bordered table-striped dt-responsive tablas">
+       <table class="table table-bordered table-striped dt-responsive tablaProductos" width="100%">
          
         <thead>
          
-         <tr>
+          <tr>
            
            <th style="width:10px">#</th>
            <th>Imagen</th>
@@ -50,25 +50,24 @@
            <th>Precio de venta</th>
            <th>Agregado</th>
            <th>Acciones</th>
-
+           
          </tr> 
 
         </thead>
 
-        <tbody>
+      <!--   <tbody>
 
-          <?php 
+        <?php
 
-          $item = null;
+        $item = null;
 
-          $valor = null;
+        $valor = null;
 
-          $productos = ControladorProductos::ctrMostrarProductos($item, $valor);
+        $productos = ControladorProductos::ctrMostrarProductos($item, $valor);
 
-
-           foreach ($productos as $key => $value) {
-
-            echo '<tr>
+        foreach ($productos as $key => $value) {
+          
+          echo '<tr>
                   <td>'.($key+1).'</td>
                   <td><img src="vistas/img/productos/default/anonymous.png" class="img-thumbnail" width="40px"></td>
                   <td>'.$value["codigo"].'</td>
@@ -98,13 +97,11 @@
 
                 </tr>';
 
-           }
+        }
 
-
-           ?>
-          
-
-        </tbody>
+        ?>
+                 
+        </tbody> -->
 
        </table>
 
@@ -148,6 +145,39 @@ MODAL AGREGAR PRODUCTO
 
           <div class="box-body">
 
+
+            <!-- ENTRADA PARA SELECCIONAR CATEGORÍA -->
+
+            <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-th"></i></span> 
+
+                <select class="form-control input-lg" id="nuevaCategoria" name="nuevaCategoria" required>
+                  
+                  <option value="">Selecionar categoría</option>
+
+                  <?php
+
+                  $item = null;
+                  $valor = null;
+
+                  $categorias = ControladorCategorias::ctrMostrarCategorias($item, $valor);
+
+                  foreach ($categorias as $key => $value) {
+                    
+                    echo '<option value="'.$value["id"].'">'.$value["categoria"].'</option>';
+                  }
+
+                  ?>
+  
+                </select>
+
+              </div>
+
+            </div>
+
             <!-- ENTRADA PARA EL CÓDIGO -->
             
             <div class="form-group">
@@ -156,7 +186,7 @@ MODAL AGREGAR PRODUCTO
               
                 <span class="input-group-addon"><i class="fa fa-code"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevoCodigo" placeholder="Ingresar código" required>
+                <input type="text" class="form-control input-lg" id="nuevoCodigo" name="nuevoCodigo" placeholder="Ingresar código" readonly required>
 
               </div>
 
@@ -171,30 +201,6 @@ MODAL AGREGAR PRODUCTO
                 <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span> 
 
                 <input type="text" class="form-control input-lg" name="nuevaDescripcion" placeholder="Ingresar descripción" required>
-
-              </div>
-
-            </div>
-
-            <!-- ENTRADA PARA SELECCIONAR CATEGORÍA -->
-
-            <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-th"></i></span> 
-
-                <select class="form-control input-lg" name="nuevaCategoria">
-                  
-                  <option value="">Selecionar categoría</option>
-
-                  <option value="Taladros">Taladros</option>
-
-                  <option value="Andamios">Andamios</option>
-
-                  <option value="Equipos para construcción">Equipos para construcción</option>
-
-                </select>
 
               </div>
 
@@ -218,13 +224,13 @@ MODAL AGREGAR PRODUCTO
 
              <div class="form-group row">
 
-                <div class="col-xs-6">
+                <div class="col-xs-12 col-sm-6">
                 
                   <div class="input-group">
                   
                     <span class="input-group-addon"><i class="fa fa-arrow-up"></i></span> 
 
-                    <input type="number" class="form-control input-lg" name="nuevoPrecioCompra" min="0" placeholder="Precio de compra" required>
+                    <input type="number" class="form-control input-lg" id="nuevoPrecioCompra" name="nuevoPrecioCompra" min="0" step="any" placeholder="Precio de compra" required>
 
                   </div>
 
@@ -232,13 +238,13 @@ MODAL AGREGAR PRODUCTO
 
                 <!-- ENTRADA PARA PRECIO VENTA -->
 
-                <div class="col-xs-6">
+                <div class="col-xs-12 col-sm-6">
                 
                   <div class="input-group">
                   
                     <span class="input-group-addon"><i class="fa fa-arrow-down"></i></span> 
 
-                    <input type="number" class="form-control input-lg" name="nuevoPrecioVenta" min="0" placeholder="Precio de venta" required>
+                    <input type="number" class="form-control input-lg" id="nuevoPrecioVenta" name="nuevoPrecioVenta" min="0" step="any" placeholder="Precio de venta" required>
 
                   </div>
                 
@@ -284,11 +290,11 @@ MODAL AGREGAR PRODUCTO
               
               <div class="panel">SUBIR IMAGEN</div>
 
-              <input type="file" id="nuevaImagen" name="nuevaImagen">
+              <input type="file" class="nuevaImagen" name="nuevaImagen">
 
               <p class="help-block">Peso máximo de la imagen 2MB</p>
 
-              <img src="vistas/img/productos/default/anonymous.png" class="img-thumbnail" width="100px">
+              <img src="vistas/img/productos/default/anonymous.png" class="img-thumbnail previsualizar" width="100px">
 
             </div>
 
@@ -310,10 +316,15 @@ MODAL AGREGAR PRODUCTO
 
       </form>
 
+        <?php
+
+          $crearProducto = new ControladorProductos();
+          $crearProducto -> ctrCrearProducto();
+
+        ?>  
+
     </div>
 
   </div>
 
 </div>
-
-
