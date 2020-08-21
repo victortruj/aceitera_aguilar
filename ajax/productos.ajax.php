@@ -54,7 +54,6 @@ if(isset($_POST["idCategoria"])){
   $codigoProducto -> ajaxCrearCodigoProducto();
 
 }
-
 /*=============================================
 EDITAR PRODUCTO
 =============================================*/ 
@@ -66,4 +65,8 @@ if(isset($_POST["idProducto"])){
   $editarProducto -> ajaxEditarProducto();
 
 }
+
+
+
+
 

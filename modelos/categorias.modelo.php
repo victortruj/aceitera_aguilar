@@ -8,7 +8,7 @@ class ModeloCategorias{
 	CREAR CATEGORIA
 	=============================================*/
 
-static public function mdlIngresarCategoria($tabla, $datos){
+	static public function mdlIngresarCategoria($tabla, $datos){
 
 		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(categoria) VALUES (:categoria)");
 
@@ -29,8 +29,7 @@ static public function mdlIngresarCategoria($tabla, $datos){
 
 	}
 
-
-/*=============================================
+	/*=============================================
 	MOSTRAR CATEGORIAS
 	=============================================*/
 
@@ -115,3 +114,4 @@ static public function mdlIngresarCategoria($tabla, $datos){
 	}
 
 }
+
