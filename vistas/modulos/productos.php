@@ -158,20 +158,22 @@ MODAL AGREGAR PRODUCTO
                   
                   <option value="">Selecionar categoría</option>
 
-                  <?php
+                 
+        <?php
 
-                  $item = null;
-                  $valor = null;
+          $item = null;
+          $valor = null;
 
-                  $categorias = ControladorCategorias::ctrMostrarCategorias($item, $valor);
+          $categorias = ControladorCategorias::ctrMostrarCategorias($item, $valor);
 
-                  foreach ($categorias as $key => $value) {
+          foreach ($categorias as $key => $value) {
                     
-                    echo '<option value="'.$value["id"].'">'.$value["categoria"].'</option>';
-                  }
-
-                  ?>
+          echo '<option value="'.$value["id"].'">'.$value["categoria"].'</option>';
   
+          }
+
+        ?>
+
                 </select>
 
               </div>
@@ -316,12 +318,12 @@ MODAL AGREGAR PRODUCTO
 
       </form>
 
-        <?php
+    <?php
 
-          $crearProducto = new ControladorProductos();
-          $crearProducto -> ctrCrearProducto();
+      $crearProducto = new ControladorProductos();
+      $crearProducto -> ctrCrearProducto();
 
-        ?>  
+    ?>  
 
     </div>
 
