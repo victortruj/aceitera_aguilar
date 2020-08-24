@@ -10,8 +10,8 @@
       
       <ol class="breadcrumb">
         
-        <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
-        <li class="active">Crear venta</li>
+        <li><a href="inicio"><i class="fa fa-home"></i>Inicio</a></li>
+        
       
       </ol>
     

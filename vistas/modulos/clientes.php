@@ -4,15 +4,14 @@
     
     <h1>
       
-      Administrar clientes
+     Clientes
     
     </h1>
 
     <ol class="breadcrumb">
       
-      <li><a href="inicio"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="inicio"><i class="fa fa-home"></i>Inicio</a></li>
       
-      <li class="active">Administrar clientes</li>
     
     </ol>
 

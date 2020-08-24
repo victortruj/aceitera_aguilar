@@ -4,16 +4,10 @@
     <section class="content-header">
       
       <h1>
-        Tablero
-        <small>panel de control</small>
-      </h1>
-      
-      <ol class="breadcrumb">
+       
+        Inicio
         
-        <li><a href="inicio"><i class="fa fa-home"></i> Inicio</a></li>
-        <li class="active">Tablero</li>
-      
-      </ol>
+      </h1>
     
     </section>
 

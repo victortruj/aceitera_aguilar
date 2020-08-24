@@ -4,15 +4,15 @@
     
     <h1>
       
-      Administrar categorías
+      Categorias
     
     </h1>
 
     <ol class="breadcrumb">
       
-      <li><a href="inicio"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="inicio"><i class="fa fa-home"></i>Inicio</a></li>
       
-      <li class="active">Administrar categorías</li>
+    
     
     </ol>
 

@@ -4,14 +4,14 @@ o<!-- Content Wrapper. Contains page content -->
     <section class="content-header">
       
       <h1>
-        Administrar usuarios
+       Usuarios
         
       </h1>
       
       <ol class="breadcrumb">
         
-        <li><a href="inicio"><i class="fa fa-home"></i> Inicio</a></li>
-        <li class="active">Administrar usarios</li>
+        <li><a href="inicio"><i class="fa fa-home"></i>Inicio</a></li>
+     
       
       </ol>
     
