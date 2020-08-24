@@ -17,7 +17,7 @@ session_start();
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
    <!-- icono de nustra pag -->
-  <link rel="icon" href="vistas/img/plantilla/icono-negro.png">
+  <link rel="icon" href="vistas/img/plantilla/icono.png">
   
 <!--=====================================
 PLUGINS DE CSS
