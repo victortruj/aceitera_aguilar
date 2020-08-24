@@ -3,8 +3,7 @@
 <div class="login-box">
   <div class="login-logo">
 
-   
-    <img src="vistas/img/plantilla/iv.png" class="img-responsive" style="padding:30px 100px 0px 100px">
+    <a><b>Inventario Aguilar</b></a>
 
   </div>
   <!-- /.login-logo -->
