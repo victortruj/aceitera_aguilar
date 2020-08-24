@@ -35,9 +35,8 @@ PLUGINS DE CSS
   <!-- Theme style -->
   <link rel="stylesheet" href="vistas/dist/css/AdminLTE.css">
 
-  <!-- AdminLTE Skins.  -->
-  <link rel="stylesheet" href="vistas/dist/css/skins/_all-skins.min.css">
-
+   <!-- AdminLTE Skins -->
+  <link rel="stylesheet" href="vistas/dist/css/skins/_all-skins.min.css"> 
   
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
@@ -95,7 +94,7 @@ PLUGINS DE JAVASCRIPT
 CUERPO DOCUMENTO
 ======================================-->
 
-<body class="hold-transition skin-blue sidebar-collapse sidebar-mini login-page">
+<body class="hold-transition skin-green-light sidebar-collapse sidebar-mini login-page">
 
 
 
