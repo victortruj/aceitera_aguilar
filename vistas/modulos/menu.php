@@ -31,11 +31,25 @@
 
 		</li>
 
+       <li>
+			
+			<a href="clientes">
+				
+			<i class="fa fa-user-plus"></i>
+
+				<span>Clientes</span>
+
+			</a>
+
+
+		</li>
+
+
 		<li>
 			
 			<a href="categorias">
 				
-			<i class="fa fa-th"></i>
+			<i class="fa fa-align-left"></i>
 
 				<span>Categorias</span>
 
@@ -49,7 +63,7 @@
 			
 			<a href="productos">
 				
-			<i class="fa fa-product-hunt"></i>
+			<i class="fa fa-rub"></i>
 
 				<span>Productos</span>
 
@@ -59,25 +73,13 @@
 		</li>
 
 
-		<li>
-			
-			<a href="clientes">
-				
-			<i class="fa fa-users"></i>
-
-				<span>Clientes</span>
-
-			</a>
-
-
-		</li>
-
+		
 
 		<li class="treeview">
 			
 			<a href="#">
 				
-			<i class="fa fa-list-ul"></i>
+			<i class="fa fa-list-alt"></i>
 
 				<span>Ventas</span>
 				
@@ -96,7 +98,7 @@
 				
 				<a href="ventas">
 
-					<i class="fa fa-circle-o"></i>
+					<i class="fa fa-database"></i>
 					<span>Administrar Ventas</span>
 
 				</a>
@@ -108,7 +110,7 @@
 				
 				<a href="crear-venta">
 
-					<i class="fa fa-circle-o"></i>
+					<i class="fa  fa-share-square-o"></i>
 					<span>Crear Venta</span>
 
 				</a>
@@ -120,7 +122,7 @@
 				
 				<a href="reportes">
 
-					<i class="fa fa-circle-o"></i>
+					<i class="fa  fa-area-chart"></i>
 					<span>Reporte de Venta</span>
 
 				</a>
