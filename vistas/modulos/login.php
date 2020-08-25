@@ -3,7 +3,7 @@
 <div class="login-box">
   <div class="login-logo">
 
-    <a><b>Inventario Aguilar</b></a>
+    <a><b>Aceitera y Repuestos Aguilar</b></a>
 
   </div>
   <!-- /.login-logo -->

@@ -1,7 +1,6 @@
 <footer class="main-footer">
 
-<strong>Copyright &copy; 2020 <a>Proyecto de graduacion II</a>. 
-</strong>	
+<strong>Copyright &copy; 2020 Proyecto de graduacion II.</strong>	
 
 Todos los derechos reservados.
 

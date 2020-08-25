@@ -22,7 +22,7 @@
 
       <div class="box-header with-border">
   
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarProducto">
+        <button class="btn btn-success" data-toggle="modal" data-target="#modalAgregarProducto">
           
           Agregar producto
 
@@ -67,7 +67,7 @@
           
           echo '<tr>
                   <td>'.($key+1).'</td>
-                  <td><img src="vistas/img/productos/default/anonymous.png" class="img-thumbnail" width="40px"></td>
+                  <td><img src="vistas/img/productos/default/default.png" class="img-thumbnail" width="40px"></td>
                   <td>'.$value["codigo"].'</td>
                   <td>'.$value["descripcion"].'</td>';
 
@@ -85,9 +85,9 @@
 
                     <div class="btn-group">
                         
-                      <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+                      <button class="btn btn-warning"><i class="fa fa-pencil-square-o"></i></button>
 
-                      <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                      <button class="btn btn-danger"><i class="fa fa-times-circle-o"></i></button>
 
                     </div>  
 
@@ -112,7 +112,7 @@
 </div>
 
 <!--=====================================
-MODAL AGREGAR PRODUCTO
+Modal agregar producto
 ======================================-->
 
 <div id="modalAgregarProducto" class="modal fade" role="dialog">
@@ -124,10 +124,10 @@ MODAL AGREGAR PRODUCTO
       <form role="form" method="post" enctype="multipart/form-data">
 
         <!--=====================================
-        CABEZA DEL MODAL
+        Cabeza modal
         ======================================-->
 
-        <div class="modal-header" style="background:#3c8dbc; color:white">
+        <div class="modal-header" style="background:#2d862d; color:white">
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
@@ -136,7 +136,7 @@ MODAL AGREGAR PRODUCTO
         </div>
 
         <!--=====================================
-        CUERPO DEL MODAL
+        Cuerpo modal
         ======================================-->
 
         <div class="modal-body">
@@ -144,13 +144,13 @@ MODAL AGREGAR PRODUCTO
           <div class="box-body">
 
 
-            <!-- ENTRADA PARA SELECCIONAR CATEGORÍA -->
+            <!-- Seleccionar categoria-->
 
             <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-th"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-align-left"></i></span> 
 
                 <select class="form-control input-lg" id="nuevaCategoria" name="nuevaCategoria" required>
                   
@@ -176,7 +176,7 @@ MODAL AGREGAR PRODUCTO
 
             </div>
 
-            <!-- ENTRADA PARA EL CÓDIGO -->
+            <!-- Codigo -->
             
             <div class="form-group">
               
@@ -184,33 +184,33 @@ MODAL AGREGAR PRODUCTO
               
                 <span class="input-group-addon"><i class="fa fa-code"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="nuevoCodigo" name="nuevoCodigo" placeholder="Ingresar código" readonly required>
+                <input type="text" class="form-control input-lg" id="nuevoCodigo" name="nuevoCodigo" placeholder="Codigo" readonly required>
 
               </div>
 
             </div>
 
-            <!-- ENTRADA PARA LA DESCRIPCIÓN -->
+            <!-- Descripcion -->
 
              <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-pinterest-p"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevaDescripcion" placeholder="Ingresar descripción" required>
+                <input type="text" class="form-control input-lg" name="nuevaDescripcion" placeholder="Descripción" required>
 
               </div>
 
             </div>
 
-             <!-- ENTRADA PARA STOCK -->
+             <!-- Stock -->
 
              <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-check"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-check-square-o"></i></span> 
 
                 <input type="number" class="form-control input-lg" name="nuevoStock" min="0" placeholder="Stock" required>
 
@@ -218,7 +218,7 @@ MODAL AGREGAR PRODUCTO
 
             </div>
 
-             <!-- ENTRADA PARA PRECIO COMPRA -->
+             <!-- Precio compra -->
 
              <div class="form-group row">
 
@@ -226,7 +226,7 @@ MODAL AGREGAR PRODUCTO
                 
                   <div class="input-group">
                   
-                    <span class="input-group-addon"><i class="fa fa-arrow-up"></i></span> 
+                    <span class="input-group-addon"><i class="fa fa-arrow-circle-o-up"></i></span> 
 
                     <input type="number" class="form-control input-lg" id="nuevoPrecioCompra" name="nuevoPrecioCompra" min="0" step="any" placeholder="Precio de compra" required>
 
@@ -234,13 +234,13 @@ MODAL AGREGAR PRODUCTO
 
                 </div>
 
-                <!-- ENTRADA PARA PRECIO VENTA -->
+                <!-- Precio venta -->
 
                 <div class="col-xs-12 col-sm-6">
                 
                   <div class="input-group">
                   
-                    <span class="input-group-addon"><i class="fa fa-arrow-down"></i></span> 
+                    <span class="input-group-addon"><i class="fa fa-arrow-circle-o-down"></i></span> 
 
                     <input type="number" class="form-control input-lg" id="nuevoPrecioVenta" name="nuevoPrecioVenta" min="0" step="any" placeholder="Precio de venta" required>
 
@@ -248,7 +248,7 @@ MODAL AGREGAR PRODUCTO
                 
                   <br>
 
-                  <!-- CHECKBOX PARA PORCENTAJE -->
+                  <!-- Checkbox porcentaje -->
 
                   <div class="col-xs-6">
                     
@@ -257,20 +257,22 @@ MODAL AGREGAR PRODUCTO
                       <label>
                         
                         <input type="checkbox" class="minimal porcentaje" checked>
-                        Utilizar procentaje
+
+                        Porcentaje
+                      
                       </label>
 
                     </div>
 
                   </div>
 
-                  <!-- ENTRADA PARA PORCENTAJE -->
+                  <!-- Porcentaje -->
 
                   <div class="col-xs-6" style="padding:0">
                     
                     <div class="input-group">
                       
-                      <input type="number" class="form-control input-lg nuevoPorcentaje" min="0" value="40" required>
+                      <input type="number" class="form-control input-lg nuevoPorcentaje" min="0" value="25" required>
 
                       <span class="input-group-addon"><i class="fa fa-percent"></i></span>
 
@@ -282,17 +284,17 @@ MODAL AGREGAR PRODUCTO
 
             </div>
 
-            <!-- ENTRADA PARA SUBIR FOTO -->
+            <!-- adjuntar foto -->
 
              <div class="form-group">
               
-              <div class="panel">SUBIR IMAGEN</div>
+              <div class="panel">Adjuntar imagen</div>
 
               <input type="file" class="nuevaImagen" name="nuevaImagen">
 
-              <p class="help-block">Peso máximo de la imagen 2MB</p>
+              <p class="help-block">Maximo 2MB</p>
 
-              <img src="vistas/img/productos/default/anonymous.png" class="img-thumbnail previsualizar" width="100px">
+              <img src="vistas/img/productos/default/default.png" class="img-thumbnail previsualizar" width="100px">
 
             </div>
 
@@ -301,14 +303,14 @@ MODAL AGREGAR PRODUCTO
         </div>
 
         <!--=====================================
-        PIE DEL MODAL
+        Pie modal
         ======================================-->
 
         <div class="modal-footer">
 
           <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
 
-          <button type="submit" class="btn btn-primary">Guardar producto</button>
+          <button type="submit" class="btn btn-success">Guardar producto</button>
 
         </div>
 
@@ -328,7 +330,7 @@ MODAL AGREGAR PRODUCTO
 </div>
 
 <!--=====================================
-MODAL EDITAR PRODUCTO
+Modal editar producto
 ======================================-->
 
 <div id="modalEditarProducto" class="modal fade" role="dialog">
@@ -340,10 +342,10 @@ MODAL EDITAR PRODUCTO
       <form role="form" method="post" enctype="multipart/form-data">
 
         <!--=====================================
-        CABEZA DEL MODAL
+        Cabeza modal
         ======================================-->
 
-        <div class="modal-header" style="background:#3c8dbc; color:white">
+        <div class="modal-header" style="background:#2d862d; color:white">
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
@@ -352,7 +354,7 @@ MODAL EDITAR PRODUCTO
         </div>
 
         <!--=====================================
-        CUERPO DEL MODAL
+        Cuerpo modal
         ======================================-->
 
         <div class="modal-body">
@@ -360,13 +362,13 @@ MODAL EDITAR PRODUCTO
           <div class="box-body">
 
 
-            <!-- ENTRADA PARA SELECCIONAR CATEGORÍA -->
+            <!-- Seleccionar categoria -->
 
             <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-th"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-align-left"></i></span> 
 
                 <select class="form-control input-lg"  name="editarCategoria" readonly required>
                   
@@ -378,7 +380,7 @@ MODAL EDITAR PRODUCTO
 
             </div>
 
-            <!-- ENTRADA PARA EL CÓDIGO -->
+            <!-- Codigo -->
             
             <div class="form-group">
               
@@ -392,13 +394,13 @@ MODAL EDITAR PRODUCTO
 
             </div>
 
-            <!-- ENTRADA PARA LA DESCRIPCIÓN -->
+            <!-- Descripcion -->
 
              <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-pinterest-p"></i></span> 
 
                 <input type="text" class="form-control input-lg" id="editarDescripcion" name="editarDescripcion" required>
 
@@ -406,13 +408,13 @@ MODAL EDITAR PRODUCTO
 
             </div>
 
-             <!-- ENTRADA PARA STOCK -->
+             <!-- Stock -->
 
              <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-check"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-check-square-o"></i></span> 
 
                 <input type="number" class="form-control input-lg" id="editarStock" name="editarStock" min="0" required>
 
@@ -420,7 +422,7 @@ MODAL EDITAR PRODUCTO
 
             </div>
 
-             <!-- ENTRADA PARA PRECIO COMPRA -->
+             <!-- Precio compra -->
 
              <div class="form-group row">
 
@@ -428,7 +430,7 @@ MODAL EDITAR PRODUCTO
                 
                   <div class="input-group">
                   
-                    <span class="input-group-addon"><i class="fa fa-arrow-up"></i></span> 
+                    <span class="input-group-addon"><i class="fa fa-arrow-circle-o-up"></i></span> 
 
                     <input type="number" class="form-control input-lg" id="editarPrecioCompra" name="editarPrecioCompra" step="any" min="0" required>
 
@@ -442,7 +444,7 @@ MODAL EDITAR PRODUCTO
                 
                   <div class="input-group">
                   
-                    <span class="input-group-addon"><i class="fa fa-arrow-down"></i></span> 
+                    <span class="input-group-addon"><i class="fa fa-arrow-circle-o-down"></i></span> 
 
                     <input type="number" class="form-control input-lg" id="editarPrecioVenta" name="editarPrecioVenta" step="any" min="0" readonly required>
 
@@ -450,7 +452,7 @@ MODAL EDITAR PRODUCTO
                 
                   <br>
 
-                  <!-- CHECKBOX PARA PORCENTAJE -->
+                  <!-- Checkbox porcentaje -->
 
                   <div class="col-xs-6">
                     
@@ -459,20 +461,22 @@ MODAL EDITAR PRODUCTO
                       <label>
                         
                         <input type="checkbox" class="minimal porcentaje" checked>
-                        Utilizar procentaje
+                     
+                        Porcentaje
+                     
                       </label>
 
                     </div>
 
                   </div>
 
-                  <!-- ENTRADA PARA PORCENTAJE -->
+                  <!-- Porcentaje -->
 
                   <div class="col-xs-6" style="padding:0">
                     
                     <div class="input-group">
                       
-                      <input type="number" class="form-control input-lg nuevoPorcentaje" min="0" value="40" required>
+                      <input type="number" class="form-control input-lg nuevoPorcentaje" min="0" value="25" required>
 
                       <span class="input-group-addon"><i class="fa fa-percent"></i></span>
 
@@ -484,17 +488,17 @@ MODAL EDITAR PRODUCTO
 
             </div>
 
-            <!-- ENTRADA PARA SUBIR FOTO -->
+            <!-- Adjuntar foto -->
 
              <div class="form-group">
               
-              <div class="panel">SUBIR IMAGEN</div>
+              <div class="panel">Adjuntar imagen</div>
 
               <input type="file" class="nuevaImagen" name="editarImagen">
 
-              <p class="help-block">Peso máximo de la imagen 2MB</p>
+              <p class="help-block">Maximo 2MB</p>
 
-              <img src="vistas/img/productos/default/anonymous.png" class="img-thumbnail previsualizar" width="100px">
+              <img src="vistas/img/productos/default/default.png" class="img-thumbnail previsualizar" width="100px">
 
               <input type="hidden" name="imagenActual" id="imagenActual">
 
@@ -505,14 +509,14 @@ MODAL EDITAR PRODUCTO
         </div>
 
         <!--=====================================
-        PIE DEL MODAL
+        Pie modal
         ======================================-->
 
         <div class="modal-footer">
 
           <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
 
-          <button type="submit" class="btn btn-primary">Guardar cambios</button>
+          <button type="submit" class="btn btn-success">Guardar cambios</button>
 
         </div>
 

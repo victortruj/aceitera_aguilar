@@ -25,7 +25,7 @@
       <div class="box">
         <div class="box-header with-border">
 
-      <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarUsuario">
+      <button class="btn btn-success" data-toggle="modal" data-target="#modalAgregarUsuario">
         
          Agregar usuario         
 
@@ -78,7 +78,7 @@
 
                   }else{
 
-                    echo '<td><img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="40px"></td>';
+                    echo '<td><img src="vistas/img/usuarios/default/default.png" class="img-thumbnail" width="40px"></td>';
 
                   }
 
@@ -102,11 +102,11 @@
                     <div class="btn-group">
                         
 
-                        <button class="btn btn-warning btnEditarUsuario" idUsuario="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarUsuario"><i class="fa fa-pencil"></i></button>
+                        <button class="btn btn-warning btnEditarUsuario" idUsuario="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarUsuario"><i class="fa fa-pencil-square-o"></i></button>
 
 
 
-                       <button class="btn btn-danger btnEliminarUsuario" idUsuario="'.$value["id"].'" fotoUsuario="'.$value["foto"].'" usuario="'.$value["usuario"].'"><i class="fa fa-times"></i></button>
+                       <button class="btn btn-danger btnEliminarUsuario" idUsuario="'.$value["id"].'" fotoUsuario="'.$value["foto"].'" usuario="'.$value["usuario"].'"><i class="fa fa-times-circle-o"></i></button>
                     
 
                       
@@ -139,7 +139,7 @@
 
 
 <!--=====================================
-MODAL AGREGAR USUARIO
+Modal agregar usuario
 ======================================-->
 
 <div id="modalAgregarUsuario" class="modal fade" role="dialog">
@@ -151,10 +151,10 @@ MODAL AGREGAR USUARIO
       <form role="form" method="post" enctype="multipart/form-data">
 
         <!--=====================================
-        CABEZA DEL MODAL
+        Cabeza modal
         ======================================-->
 
-        <div class="modal-header" style="background:#3c8dbc; color:white">
+        <div class="modal-header" style="background:#2d862d; color:white">
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
@@ -163,42 +163,42 @@ MODAL AGREGAR USUARIO
         </div>
 
         <!--=====================================
-        CUERPO DEL MODAL
+        Cuerpo modal
         ======================================-->
 
         <div class="modal-body">
 
           <div class="box-body">
 
-            <!-- entrada para el nombre -->
+            <!-- Nombre -->
             
             <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-user"></i></span> 
+                <span class="input-group-addon"><i class="fa  fa-pencil-square-o"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevoNombre" placeholder="Ingresar nombre" required>
+                <input type="text" class="form-control input-lg" name="nuevoNombre" placeholder="Nombre" required>
 
               </div>
 
             </div>
 
-            <!-- entrada para el usuario -->
+            <!-- Usuario -->
 
              <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-key"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-user"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevoUsuario" placeholder="Ingresar usuario" id="nuevoUsuario" required>
+                <input type="text" class="form-control input-lg" name="nuevoUsuario" placeholder="Usuario" id="nuevoUsuario" required>
 
               </div>
 
             </div>
 
-            <!-- entrada para la contraeña -->
+            <!-- Contraeña -->
 
              <div class="form-group">
               
@@ -206,19 +206,19 @@ MODAL AGREGAR USUARIO
               
                 <span class="input-group-addon"><i class="fa fa-lock"></i></span> 
 
-                <input type="password" class="form-control input-lg" name="nuevoPassword" placeholder="Ingresar contraseña" required>
+                <input type="password" class="form-control input-lg" name="nuevoPassword" placeholder="Contraseña" required>
 
               </div>
 
             </div>
 
-            <!-- entrada para seleccionar perfil -->
+            <!-- Seleccionar perfil -->
 
             <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-users"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-user-plus"></i></span> 
 
                 <select class="form-control input-lg" name="nuevoPerfil">
                   
@@ -236,7 +236,7 @@ MODAL AGREGAR USUARIO
 
             </div>
 
-            <!-- entrada para subir foto -->
+            <!-- Subir foto -->
 
              <div class="form-group">
               
@@ -244,10 +244,9 @@ MODAL AGREGAR USUARIO
 
               <input type="file" class="nuevaFoto" name="nuevaFoto">
 
-              <p class="help-block">Peso máximo de la foto 2MB</p>
+              <p class="help-block">Maximo 2MB</p>
 
-                                                                                        <!-- error internet explorer     -->
-              <img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail previsualizar" width="100px">
+              <img src="vistas/img/usuarios/default/default.png" class="img-thumbnail previsualizar" width="100px">
 
             </div>
 
@@ -256,14 +255,14 @@ MODAL AGREGAR USUARIO
         </div>
 
         <!--=====================================
-        PIE DEL MODAL
+        Pie modal
         ======================================-->
 
         <div class="modal-footer">
 
           <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
 
-          <button type="submit" class="btn btn-primary">Guardar usuario</button>
+          <button type="submit" class="btn btn-success">Guardar usuario</button>
 
         </div>
 
@@ -287,7 +286,7 @@ MODAL AGREGAR USUARIO
 
 
 <!--=====================================
-MODAL EDITAR USUARIO
+Modal editar usuario
 ======================================-->
 
 <div id="modalEditarUsuario" class="modal fade" role="dialog">
@@ -299,10 +298,10 @@ MODAL EDITAR USUARIO
       <form role="form" method="post" enctype="multipart/form-data">
 
         <!--=====================================
-        CABEZA DEL MODAL
+        Cabeza modal
         ======================================-->
 
-        <div class="modal-header" style="background:#3c8dbc; color:white">
+        <div class="modal-header" style="background:#2d862d; color:white">
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
@@ -311,20 +310,20 @@ MODAL EDITAR USUARIO
         </div>
 
         <!--=====================================
-        CUERPO DEL MODAL
+        Cuerpo modal
         ======================================-->
 
         <div class="modal-body">
 
           <div class="box-body">
 
-            <!-- ENTRADA PARA EL NOMBRE -->
+            <!-- Nombre -->
             
             <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-user"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-pencil-square-o"></i></span> 
 
                 <input type="text" class="form-control input-lg" id="editarNombre" name="editarNombre" value="" required>
 
@@ -332,13 +331,13 @@ MODAL EDITAR USUARIO
 
             </div>
 
-            <!-- ENTRADA PARA EL USUARIO -->
+            <!-- Usuario -->
 
              <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-key"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-user"></i></span> 
 
                 <input type="text" class="form-control input-lg" id="editarUsuario" name="editarUsuario" value="" readonly>
 
@@ -346,7 +345,7 @@ MODAL EDITAR USUARIO
 
             </div>
 
-            <!-- ENTRADA PARA LA CONTRASEÑA -->
+            <!-- Contraseña -->
 
              <div class="form-group">
               
@@ -354,7 +353,7 @@ MODAL EDITAR USUARIO
               
                 <span class="input-group-addon"><i class="fa fa-lock"></i></span> 
 
-                <input type="password" class="form-control input-lg" name="editarPassword" placeholder="Escriba la nueva contraseña">
+                <input type="password" class="form-control input-lg" name="editarPassword" placeholder="Contraseña">
 
                 <input type="hidden" id="passwordActual" name="passwordActual">
 
@@ -362,13 +361,13 @@ MODAL EDITAR USUARIO
 
             </div>
 
-            <!-- ENTRADA PARA SELECCIONAR SU PERFIL -->
+            <!-- Seleccionar perfil -->
 
             <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-users"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-user-plus"></i></span> 
 
                 <select class="form-control input-lg" name="editarPerfil">
                   
@@ -386,17 +385,17 @@ MODAL EDITAR USUARIO
 
             </div>
 
-            <!-- ENTRADA PARA SUBIR FOTO -->
+            <!-- Subir foto-->
 
              <div class="form-group">
               
-              <div class="panel">SUBIR FOTO</div>
+              <div class="panel">Subir foto</div>
 
               <input type="file" class="nuevaFoto" name="editarFoto">
 
-              <p class="help-block">Peso máximo de la foto 2MB</p>
+              <p class="help-block">Maximo 2MB</p>
 
-              <img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail previsualizar" width="100px">
+              <img src="vistas/img/usuarios/default/default.png" class="img-thumbnail previsualizar" width="100px">
 
               <input type="hidden" name="fotoActual" id="fotoActual">
 
@@ -407,14 +406,14 @@ MODAL EDITAR USUARIO
         </div>
 
         <!--=====================================
-        PIE DEL MODAL
+        Pie modal
         ======================================-->
 
         <div class="modal-footer">
 
           <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
 
-          <button type="submit" class="btn btn-primary">Modificar usuario</button>
+          <button type="submit" class="btn btn-success">Modificar usuario</button>
 
         </div>
 

@@ -23,7 +23,7 @@
 
       <div class="box-header with-border">
   
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarCliente">
+        <button class="btn btn-success" data-toggle="modal" data-target="#modalAgregarCliente">
           
           Agregar cliente
 
@@ -84,9 +84,9 @@
 
               <div class="btn-group">
                   
-                <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+                <button class="btn btn-warning"><i class="fa fa-pencil-square-o"></i></button>
 
-                <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                <button class="btn btn-danger"><i class="fa fa-times-circle-o"></i></button>
 
               </div>  
 
@@ -107,7 +107,7 @@
 </div>
 
 <!--=====================================
-MODAL AGREGAR CLIENTE
+Modal agregar cliente
 ======================================-->
 
 <div id="modalAgregarCliente" class="modal fade" role="dialog">
@@ -119,10 +119,10 @@ MODAL AGREGAR CLIENTE
       <form role="form" method="post">
 
         <!--=====================================
-        CABEZA DEL MODAL
+        Cabeza modal
         ======================================-->
 
-        <div class="modal-header" style="background:#3c8dbc; color:white">
+        <div class="modal-header" style="background:#2d862d; color:white">
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
@@ -131,70 +131,70 @@ MODAL AGREGAR CLIENTE
         </div>
 
         <!--=====================================
-        CUERPO DEL MODAL
+        Cuerpo modal
         ======================================-->
 
         <div class="modal-body">
 
           <div class="box-body">
 
-            <!-- ENTRADA NOMBRE -->
+            <!-- Nombre -->
             
             <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-user"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-pencil-square-o"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevoCliente" placeholder="Ingresar nombre" required>
+                <input type="text" class="form-control input-lg" name="nuevoCliente" placeholder="Nombre" required>
 
               </div>
 
             </div>
 
-            <!-- ENTRADA DPI-->
+            <!--DPI-->
             
             <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-key"></i></span> 
+                <span class="input-group-addon"><i class="fa  fa-credit-card"></i></span> 
 
-                <input type="number" min="0" class="form-control input-lg" name="nuevoDocumentoId" placeholder="Ingresar DPI" required>
+                <input type="number" min="0" class="form-control input-lg" name="nuevoDocumentoId" placeholder="DPI" required>
 
               </div>
 
             </div>
 
-            <!-- ENTRADA CORREO -->
+            <!-- Correo -->
             
             <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span> 
 
-                <input type="email" class="form-control input-lg" name="nuevoEmail" placeholder="Ingresar Correo" required>
+                <input type="email" class="form-control input-lg" name="nuevoEmail" placeholder="Correo" required>
 
               </div>
 
             </div>
 
-            <!-- ENTRADA TELÉFONO -->
+            <!-- Telefono -->
             
             <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-phone"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-whatsapp"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevoTelefono" placeholder="Ingresar telefono" data-inputmask="'mask':'(999) 9999-9999'" data-mask required>
+                <input type="text" class="form-control input-lg" name="nuevoTelefono" placeholder="Telefono" data-inputmask="'mask':'(999) 9999-9999'" data-mask required>
 
               </div>
 
             </div>
 
-            <!-- ENTRADA DIRECCIÓN -->
+            <!-- Direccion -->
             
             <div class="form-group">
               
@@ -202,21 +202,21 @@ MODAL AGREGAR CLIENTE
               
                 <span class="input-group-addon"><i class="fa fa-map-marker"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevaDireccion" placeholder="Ingresar direccion" required>
+                <input type="text" class="form-control input-lg" name="nuevaDireccion" placeholder="Direccion" required>
 
               </div>
 
             </div>
 
-             <!-- ENTRADA NACIMIENTO -->
+             <!-- Fecha Nacimiento -->
             
             <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-calendar"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-calendar-check-o"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevaFechaNacimiento" placeholder="Ingresar fecha nacimiento" data-inputmask="'alias': 'yyyy/mm/dd'" data-mask required>
+                <input type="text" class="form-control input-lg" name="nuevaFechaNacimiento" placeholder="Fecha de nacimiento" data-inputmask="'alias': 'yyyy/mm/dd'" data-mask required>
 
               </div>
 
@@ -227,14 +227,14 @@ MODAL AGREGAR CLIENTE
         </div>
 
         <!--=====================================
-        PIE DEL MODAL
+        Pie nodal
         ======================================-->
 
         <div class="modal-footer">
 
           <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
 
-          <button type="submit" class="btn btn-primary">Guardar cliente</button>
+          <button type="submit" class="btn btn-success">Guardar cliente</button>
 
         </div>
 

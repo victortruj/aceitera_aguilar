@@ -24,7 +24,7 @@
 
       <div class="box-header with-border">
   
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarCategoria">
+        <button class="btn btn-success" data-toggle="modal" data-target="#modalAgregarCategoria">
           
           Agregar categoría
 
@@ -69,9 +69,9 @@
 
                       <div class="btn-group">
                           
-                        <button class="btn btn-warning btnEditarCategoria" idCategoria="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarCategoria"><i class="fa fa-pencil"></i></button>
+                        <button class="btn btn-warning btnEditarCategoria" idCategoria="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarCategoria"><i class="fa fa-pencil-square-o"></i></button>
 
-                        <button class="btn btn-danger btnEliminarCategoria" idCategoria="'.$value["id"].'"><i class="fa fa-times"></i></button>
+                        <button class="btn btn-danger btnEliminarCategoria" idCategoria="'.$value["id"].'"><i class="fa fa-times-circle-o"></i></button>
 
                       </div>  
 
@@ -95,7 +95,7 @@
 </div>
 
 <!--=====================================
-MODAL AGREGAR CATEGORÍA
+Modal agregar categoria
 ======================================-->
 
 <div id="modalAgregarCategoria" class="modal fade" role="dialog">
@@ -107,10 +107,10 @@ MODAL AGREGAR CATEGORÍA
       <form role="form" method="post">
 
         <!--=====================================
-        CABEZA DEL MODAL
+        Cabeza modal
         ======================================-->
 
-        <div class="modal-header" style="background:#3c8dbc; color:white">
+        <div class="modal-header" style="background:#2d862d; color:white">
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
@@ -119,22 +119,22 @@ MODAL AGREGAR CATEGORÍA
         </div>
 
         <!--=====================================
-        CUERPO DEL MODAL
+        Cuerpo del modal
         ======================================-->
 
         <div class="modal-body">
 
           <div class="box-body">
 
-            <!-- ENTRADA PARA EL NOMBRE -->
+            <!-- Nombre -->
             
             <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-th"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-align-left"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevaCategoria" placeholder="Ingresar categoría" required>
+                <input type="text" class="form-control input-lg" name="nuevaCategoria" placeholder="Categoría" required>
 
               </div>
 
@@ -145,14 +145,14 @@ MODAL AGREGAR CATEGORÍA
         </div>
 
         <!--=====================================
-        PIE DEL MODAL
+        Pie modal
         ======================================-->
 
         <div class="modal-footer">
 
           <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
 
-          <button type="submit" class="btn btn-primary">Guardar categoría</button>
+          <button type="submit" class="btn btn-success">Guardar categoría</button>
 
         </div>
 
@@ -172,7 +172,7 @@ MODAL AGREGAR CATEGORÍA
 </div>
 
 <!--=====================================
-MODAL EDITAR CATEGORÍA
+Modal editar categoria
 ======================================-->
 
 <div id="modalEditarCategoria" class="modal fade" role="dialog">
@@ -184,10 +184,10 @@ MODAL EDITAR CATEGORÍA
       <form role="form" method="post">
 
         <!--=====================================
-        CABEZA DEL MODAL
+        Cabeza modal
         ======================================-->
 
-        <div class="modal-header" style="background:#3c8dbc; color:white">
+        <div class="modal-header" style="background:#2d862d; color:white">
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
@@ -196,20 +196,20 @@ MODAL EDITAR CATEGORÍA
         </div>
 
         <!--=====================================
-        CUERPO DEL MODAL
+        Cuerpo modal
         ======================================-->
 
         <div class="modal-body">
 
           <div class="box-body">
 
-            <!-- ENTRADA PARA EL NOMBRE -->
+            <!-- Nombre -->
             
             <div class="form-group">
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa fa-th"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-align-left"></i></span> 
 
                 <input type="text" class="form-control input-lg" name="editarCategoria" id="editarCategoria" required>
 
@@ -224,14 +224,14 @@ MODAL EDITAR CATEGORÍA
         </div>
 
         <!--=====================================
-        PIE DEL MODAL
+        Pie modal
         ======================================-->
 
         <div class="modal-footer">
 
           <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
 
-          <button type="submit" class="btn btn-primary">Guardar cambios</button>
+          <button type="submit" class="btn btn-success">Guardar cambios</button>
 
         </div>
 

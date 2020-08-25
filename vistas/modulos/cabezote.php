@@ -8,13 +8,13 @@ Logotipo
 <a href="inicio" class="logo">
 	
   <!-- logo mini  -->
-  
-<span class="logo-mini"><b>I</b>A</span>
+
+<span class="logo-mini"><i class="fa fa-car"></i></span>
 
   <!-- logo normal  -->
 
-<span class="logo-lg"><b>Inventario Aguilar</b></span>
-
+<span class="logo-lg"><b>Aceitera Aguilar <i class="fa  fa-car"></i></b></span>
+                         
 </a>
 
 <!--=====================================

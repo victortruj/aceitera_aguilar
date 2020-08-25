@@ -63,7 +63,7 @@
 			
 			<a href="productos">
 				
-			<i class="fa fa-rub"></i>
+			<i class="fa  fa-pinterest-p"></i>
 
 				<span>Productos</span>
 
@@ -79,7 +79,7 @@
 			
 			<a href="#">
 				
-			<i class="fa fa-list-alt"></i>
+			<i class="fa  fa-cart-plus"></i>
 
 				<span>Ventas</span>
 				
