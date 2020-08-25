@@ -48,6 +48,10 @@ PLUGINS DE CSS
     <!-- iCheck for checkboxes and radio inputs -->
   <link rel="stylesheet" href="vistas/plugins/iCheck/all.css">
 
+  <!-- CSS personalizado -->
+
+  <link rel="stylesheet" href="vistas/css/estilos.css">
+
 
 <!--=====================================
 PLUGINS DE JAVASCRIPT
