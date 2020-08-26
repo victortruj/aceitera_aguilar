@@ -240,6 +240,13 @@ Modal agregar cliente
 
       </form>
 
+       <?php
+
+        $crearCliente = new ControladorClientes();
+        $crearCliente -> ctrCrearCliente();
+
+      ?>
+
     </div>
 
   </div>
