@@ -200,7 +200,7 @@ $(document).on("click", ".btnEliminarUsuario", function(){
     text: "¡Si no lo está puede cancelar la accíón!",
     type: 'warning',
     showCancelButton: true,
-    confirmButtonColor: '#3085d6',
+    confirmButtonColor: '#2d862d',
       cancelButtonColor: '#d33',
       cancelButtonText: 'Cancelar',
       confirmButtonText: 'Si, borrar usuario!'

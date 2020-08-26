@@ -220,7 +220,7 @@ Modal agregar usuario
               
                 <span class="input-group-addon"><i class="fa fa-user-plus"></i></span> 
 
-                <select class="form-control input-lg" name="nuevoPerfil">
+                <select class="form-control input-lg" name="nuevoPerfil" required>
                   
                   <option value="">Selecionar perfil</option>
 
