@@ -158,7 +158,7 @@ Modal agregar cliente
               
               <div class="input-group">
               
-                <span class="input-group-addon"><i class="fa  fa-credit-card"></i></span> 
+                <span class="input-group-addon"><i class="fa fa-credit-card"></i></span> 
 
                 <input type="number" min="0" class="form-control input-lg" name="nuevoDocumentoId" placeholder="DPI" required>
 
