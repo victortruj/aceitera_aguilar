@@ -57,42 +57,57 @@
         </thead>
 
         <tbody>
-          
-          <tr>
 
-            <td>1</td>
+         <?php
 
-            <td>Marlon Aguilar</td>
+          $item = null;
+          $valor = null;
 
-             <td>2229129790207</td>
+          $clientes = ControladorClientes::ctrMostrarClientes($item, $valor);
 
-             <td>vtrujillor@miumg.edu.gt</td>
+          foreach ($clientes as $key => $value) {
+            
 
-             <td>55372411</td>
+            echo '<tr>
 
-             <td>Avenida Ismael Arriaza 0-68 zona 2 sanarate</td>
+                    <td>'.($key+1).'</td>
 
-             <td>01-03-1987</td>
+                    <td>'.$value["nombre"].'</td>
 
-             <td>20</td>
+                    <td>'.$value["documento"].'</td>
 
-            <td>2020-08-24 09:47:10</td>
+                    <td>'.$value["email"].'</td>
 
-            <td>2020-08-24 09:47:10</td>
+                    <td>'.$value["telefono"].'</td>
 
-            <td>
+                    <td>'.$value["direccion"].'</td>
 
-              <div class="btn-group">
-                  
+                    <td>'.$value["fecha_nacimiento"].'</td>             
+
+                    <td>'.$value["compras"].'</td>
+
+                    <td>0000-00-00 00:00:00</td>
+
+                    <td>'.$value["fecha"].'</td>
+
+                    <td>
+
+                      <div class="btn-group">
+                          
                 <button class="btn btn-warning"><i class="fa fa-pencil-square-o"></i></button>
 
                 <button class="btn btn-danger"><i class="fa fa-times-circle-o"></i></button>
 
-              </div>  
 
-            </td>
+                      </div>  
 
-          </tr>
+                    </td>
+
+                  </tr>';
+          
+            }
+
+        ?>
 
         </tbody>
 
