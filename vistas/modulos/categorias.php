@@ -69,9 +69,9 @@
 
                       <div class="btn-group">
                           
-                        <button class="btn btn-warning btnEditarCategoria" idCategoria="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarCategoria"><i class="fa fa-pencil-square-o"></i></button>
+                        <button class="btn btn-success btnEditarCategoria" idCategoria="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarCategoria"><i class="fa fa-pencil-square-o"></i>Editar</button>
 
-                        <button class="btn btn-danger btnEliminarCategoria" idCategoria="'.$value["id"].'"><i class="fa fa-times-circle-o"></i></button>
+                        <button class="btn btn-danger btnEliminarCategoria" idCategoria="'.$value["id"].'"><i class="fa fa-times-circle-o"></i>Eliminar</button>
 
                       </div>  
 
