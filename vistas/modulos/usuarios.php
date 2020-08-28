@@ -41,7 +41,7 @@
          
          <tr>
            
-           <th style="width:10px">#</th>
+           <th style="width:15px">#</th>
            <th>Nombre</th>
            <th>Usuario</th>
            <th>Foto</th>

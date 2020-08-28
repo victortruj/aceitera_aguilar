@@ -94,9 +94,10 @@
 
                       <div class="btn-group">
                           
-                <button class="btn btn-warning"><i class="fa fa-pencil-square-o"></i></button>
+                <button class="btn btn-warning btnEditarCliente" data-toggle="modal" data-target="#modalEditarCliente" idCliente="'.$value["id"].'"><i class="fa fa-pencil-square-o"></i></button>
 
-                <button class="btn btn-danger"><i class="fa fa-times-circle-o"></i></button>
+                <button class="btn btn-danger btnEliminarCliente" idCliente="'.$value["id"].'"><i class="fa fa-times-circle-o"></i></button>
+
 
 
                       </div>  
@@ -267,3 +268,158 @@ Modal agregar cliente
   </div>
 
 </div>
+
+<!--=====================================
+Modal editar
+======================================-->
+
+<div id="modalEditarCliente" class="modal fade" role="dialog">
+  
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <form role="form" method="post">
+
+        <!--=====================================
+        Cabeza modal
+        ======================================-->
+
+        <div class="modal-header" style="background:#2d862d; color:white">
+
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          <h4 class="modal-title">Editar cliente</h4>
+
+        </div>
+
+        <!--=====================================
+        Cuerpo modal
+        ======================================-->
+
+        <div class="modal-body">
+
+          <div class="box-body">
+
+            <!-- Nombre -->
+            
+            <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-pencil-square-o"></i></span> 
+
+                <input type="text" class="form-control input-lg" name="editarCliente" id="editarCliente" required>
+                <input type="hidden" id="idCliente" name="idCliente">
+              </div>
+
+            </div>
+
+            <!-- DPI -->
+            
+            <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-credit-card"></i></span> 
+
+                <input type="number" min="0" class="form-control input-lg" name="editarDocumentoId" id="editarDocumentoId" required>
+
+              </div>
+
+            </div>
+
+            <!-- Correo -->
+            
+            <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span> 
+
+                <input type="email" class="form-control input-lg" name="editarEmail" id="editarEmail" required>
+
+              </div>
+
+            </div>
+
+            <!-- Telefono -->
+            
+            <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-whatsapp"></i></span> 
+
+                <input type="text" class="form-control input-lg" name="editarTelefono" id="editarTelefono" data-inputmask="'mask':'(999) 9999-9999'" data-mask required>
+
+              </div>
+
+            </div>
+
+            <!-- Direccion -->
+            
+            <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-map-marker"></i></span> 
+
+                <input type="text" class="form-control input-lg" name="editarDireccion" id="editarDireccion"  required>
+
+              </div>
+
+            </div>
+
+             <!-- Fecha de nacimiento -->
+            
+            <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-calendar-check-o"></i></span> 
+
+                <input type="text" class="form-control input-lg" name="editarFechaNacimiento" id="editarFechaNacimiento"  data-inputmask="'alias': 'yyyy/mm/dd'" data-mask required>
+
+              </div>
+
+            </div>
+  
+          </div>
+
+        </div>
+
+        <!--=====================================
+        Pie modal
+        ======================================-->
+
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
+
+          <button type="submit" class="btn btn-success">Guardar cambios</button>
+
+        </div>
+
+      </form>
+
+       <?php
+
+        $editarCliente = new ControladorClientes();
+        $editarCliente -> ctrEditarCliente();
+
+      ?>
+ 
+    </div>
+
+  </div>
+
+</div>
+
+<?php
+
+  $eliminarCliente = new ControladorClientes();
+  $eliminarCliente -> ctrEliminarCliente();
+
+?>
+
