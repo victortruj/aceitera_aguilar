@@ -1,6 +1,6 @@
 <footer class="main-footer">
 
-<strong>Copyright &copy; 2020 Repuestos y Aceitera Aguilar.</strong>	
+<strong>Repuestos y Aceitera Aguilar &copy; 2020.</strong>	
 
 Todos los derechos reservados.
 

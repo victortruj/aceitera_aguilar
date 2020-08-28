@@ -94,36 +94,36 @@
 
 			<ul class="treeview-menu">
 
-			<li>
-				
-				<a href="ventas">
-
-					<i class="fa fa-database"></i>
-					<span>Administrar Ventas</span>
-
-				</a>
-
-			</li>
-
+			
 
 			<li>
 				
 				<a href="crear-venta">
 
 					<i class="fa  fa-share-square-o"></i>
-					<span>Crear Venta</span>
+					<span>Nueva Venta</span>
 
 				</a>
 
 			</li>
-			
+
+			<li>
+				
+				<a href="ventas">
+
+					<i class="fa fa-database"></i>
+					<span>Administracion</span>
+
+				</a>
+
+			</li>
 
 			<li>
 				
 				<a href="reportes">
 
 					<i class="fa  fa-area-chart"></i>
-					<span>Reporte de Venta</span>
+					<span>Reportes</span>
 
 				</a>
 
