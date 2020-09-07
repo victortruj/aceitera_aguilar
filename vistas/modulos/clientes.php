@@ -4,7 +4,10 @@
     
     <h1>
       
-     Clientes
+      
+      <i class="fa fa-user-plus"></i> Clientes
+
+
     
     </h1>
 
@@ -26,6 +29,7 @@
         <button class="btn btn-success" data-toggle="modal" data-target="#modalAgregarCliente">
           
           Agregar cliente
+
 
         </button>
 
@@ -92,12 +96,12 @@
 
                     <td>
 
-                      <div class="btn-group">
+                      <div class="btn-group-xs">
                           
-                <button class="btn btn btn-success btnEditarCliente" data-toggle="modal" data-target="#modalEditarCliente" idCliente="'.$value["id"].'"><i class="fa fa-pencil-square-o"></i>Editar</button>
+                <button class="btn btn btn-success btnEditarCliente" data-toggle="modal" data-target="#modalEditarCliente" idCliente="'.$value["id"].'"><i class="fa fa-pencil-square-o"></i> Modificar</button>
 
 
-                <button class="btn btn-danger btnEliminarCliente" idCliente="'.$value["id"].'"><i class="fa fa-times-circle-o"></i>Eliminar</button>
+                <button class="btn btn-danger btnEliminarCliente" idCliente="'.$value["id"].'"><i class="fa fa-trash-o"></i> Eliminar</button>
 
 
 

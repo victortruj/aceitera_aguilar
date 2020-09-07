@@ -5,7 +5,7 @@
       
       <h1>
       
-       Usuarios
+       <i class="fa fa-user"></i> Usuarios
         
       </h1>
       
@@ -20,7 +20,7 @@
 
   <!-- Main content -->
   <section class="content">
-
+ 
       <!-- Default box -->
       <div class="box">
         <div class="box-header with-border">
@@ -88,25 +88,25 @@
 
                   if($value["estado"] != 0){
 
-                    echo '<td><button class="btn btn-success btn-xs btnActivar" idUsuario="'.$value["id"].'" estadoUsuario="0">Activado</button></td>';
+                    echo '<td><button class="btn btn-success btn-xs btnActivar" idUsuario="'.$value["id"].'" estadoUsuario="0">Habilitado</button></td>';
 
                   }else{
 
-                    echo '<td><button class="btn btn-danger btn-xs btnActivar" idUsuario="'.$value["id"].'" estadoUsuario="1">Desactivado</button></td>';
+                    echo '<td><button class="btn btn-danger btn-xs btnActivar" idUsuario="'.$value["id"].'" estadoUsuario="1">Deshabilitado</button></td>';
 
                   }             
 
                   echo '<td>'.$value["ultimo_login"].'</td>
                   <td>
 
-                    <div class="btn-group">
+                    <div class="btn-group-xs">
                         
 
-                        <button class="btn btn-success btnEditarUsuario" idUsuario="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarUsuario"><i class="fa fa-pencil-square-o"></i>Editar</button>
+                        <button class="btn btn-success btnEditarUsuario" idUsuario="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarUsuario"><i class="fa fa-pencil-square-o"></i> Modificar</button>
 
 
 
-                       <button class="btn btn-danger btnEliminarUsuario" idUsuario="'.$value["id"].'" fotoUsuario="'.$value["foto"].'" usuario="'.$value["usuario"].'"><i class="fa fa-times-circle-o"></i>Eliminar</button>
+                       <button class="btn btn-danger btnEliminarUsuario" idUsuario="'.$value["id"].'" fotoUsuario="'.$value["foto"].'" usuario="'.$value["usuario"].'"><i class="fa fa-trash-o"></i> Eliminar</button>
                     
 
                       

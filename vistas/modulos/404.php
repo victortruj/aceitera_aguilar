@@ -1,7 +1,7 @@
 <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+<div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header"></section>
+  <section class="content-header"></section>
 
   <div class="error-page">
     
@@ -9,27 +9,21 @@
 
   <div class="error-content"></div>
 
-<h3>
+  <h3>
 
-        <i class="fa fa-warning text-success"></i> 
+    <i class="fa fa-chrome text-success"></i> pagina no encontrada
 
-          pagina no encontrada
+  </h3>
 
-        </h3>
+  <p>
 
-        <p>
-        
-           Las paginas disponibles se encuentran en el menu lateral. 
-           Tambien puedes regresar a inicio haciendo <a href="inicio">click aquí.</a>
-        
-        </p>
+    Ingrese al menu lateral. Tambien puedes regresar a inicio haciendo <a href="inicio">click aquí.</a>
 
+  </p>
 
   </div>
-
-
 
   </section>
   <!-- /.content -->
 </div>
-<!-- /.content-wrapper -->
+

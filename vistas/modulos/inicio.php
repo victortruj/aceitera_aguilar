@@ -5,7 +5,7 @@
       
       <h1>
        
-        Inicio
+        <i class="fa fa-home"></i> Inicio
         
       </h1>
     

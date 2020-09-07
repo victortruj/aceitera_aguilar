@@ -4,7 +4,7 @@
     
     <h1>
       
-      Categorias
+       <i class="fa fa-align-left"></i> Categorias
     
     </h1>
 
@@ -67,11 +67,11 @@
 
                     <td>
 
-                      <div class="btn-group">
+                      <div class="btn-group-xs">
                           
-                        <button class="btn btn-success btnEditarCategoria" idCategoria="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarCategoria"><i class="fa fa-pencil-square-o"></i>Editar</button>
+                        <button class="btn btn-success btnEditarCategoria" idCategoria="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarCategoria"><i class="fa fa-pencil-square-o"></i> Modificar</button>
 
-                        <button class="btn btn-danger btnEliminarCategoria" idCategoria="'.$value["id"].'"><i class="fa fa-times-circle-o"></i>Eliminar</button>
+                        <button class="btn btn-danger btnEliminarCategoria" idCategoria="'.$value["id"].'"><i class="fa fa-trash-o"></i> Eliminar</button>
 
                       </div>  
 

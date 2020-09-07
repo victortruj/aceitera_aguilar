@@ -4,7 +4,7 @@
     
     <h1>
       
-      Productos
+      <i class="fa fa-pinterest-p"></i> Productos
     
     </h1>
 
@@ -38,14 +38,14 @@
          
           <tr>
            
-           <th style="width:10px">#</th>
+           <th style="width:15px">#</th>
            <th>Imagen</th>
            <th>Código</th>
            <th>Descripción</th>
            <th>Categoría</th>
-           <th>Stock</th>
-           <th>Precio de compra</th>
-           <th>Precio de venta</th>
+           <th>Productos</th>
+           <th>Precio Compra</th>
+           <th>Precio Venta</th>
            <th>Agregado</th>
            <th>Acciones</th>
            
@@ -226,7 +226,7 @@ Modal agregar producto
                       
                       <input type="number" class="form-control input-lg nuevoPorcentaje" min="0" value="25" required>
 
-                      <span class="input-group-addon"><i class="fa fa-percent"></i></span>
+                      <span class="input-group-addon"><i>%</i></span>
 
                     </div>
 
