@@ -23,21 +23,19 @@
 
     <!-- FORMULARIO -->
 
- <div class="col-lg-5 col-xs-12">
-   
- 
-  <div class="box box-success">
-    
-    <div class="box-header with-border"></div>
+  <div class="col-lg-5 col-xs-12">
+        
+        <div class="box box-success">
+          
+          <div class="box-header with-border"></div>
 
-<form role="form" method="post">
+          <form role="form" method="post" class="formularioVenta">
 
-<div class="box-body">
-
-<div class="box">
+            <div class="box-body">
   
+              <div class="box">
 
-<!-- Vendedor -->
+<!-- Vendedor ENTRADA-->
 
   <div class="form-group">
     
@@ -45,7 +43,9 @@
       
       <span class="input-group-addon"><i class="fa fa-user"></i></span> 
 
-      <input type="text" class="form-control" id="nuevoVendedor" value="Usuario Administrador" readonly>
+      <input type="text" class="form-control" id="nuevoVendedor" value="<?php echo $_SESSION["nombre"]; ?>" readonly>
+
+       <input type="hidden" name="idVendedor" value="<?php echo $_SESSION["id"]; ?>">
 
 
     </div>
@@ -58,10 +58,37 @@
     
     <div class="input-group">
       
-      <span class="input-group-addon"><i class="fa fa-lock"></i></span> 
+      <span class="input-group-addon"><i class="fa fa-barcode"></i></span> 
 
-      <input type="text" class="form-control" id="nuevaVenta" value="1236548" readonly>
+ <?php
 
+      $item = null;
+      $valor = null;
+
+      $ventas = ControladorVentas::ctrMostrarVentas($item, $valor);
+
+      if(!$ventas){
+
+      echo '<input type="text" class="form-control" id="nuevaVenta" name="nuevaVenta" value="1" readonly>';
+                  
+
+      }else{
+
+      foreach ($ventas as $key => $value) {
+                        
+      }
+
+      $codigo = $value["codigo"] + 1;
+
+
+
+    echo '<input type="text" class="form-control" id="nuevaVenta" name="nuevaVenta" value="'.$codigo.'" readonly>';
+                  
+
+    }
+
+    ?>
+                    
 
     </div>
   </div>
@@ -77,7 +104,23 @@
 
   <select class="form-control" id="seleccionarCliente" name="seleccionarCliente" required>
 
-                    <option value="">Seleccionar cliente</option>
+      <option value="">Seleccionar cliente</option>
+
+
+    <?php
+
+    $item = null;
+    $valor = null;
+
+    $categorias = ControladorClientes::ctrMostrarClientes($item, $valor);
+
+    foreach ($categorias as $key => $value) {
+
+    echo '<option value="'.$value["id"].'">'.$value["nombre"].'</option>';
+
+      }
+
+  ?>
 
       
 </select>
@@ -94,43 +137,7 @@
 
  <div class="form-group row nuevoProducto">
    
-   <!-- Descripcion del producto -->
-
-<div class="col-xs-6" style="padding-right:0px">
   
-
-<div class="input-group">
-  
-<span class="input-group-addon"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button></span>
-
- <input type="text" class="form-control" id="agregarProducto" placeholder="Descripcion producto" required>
-
-</div>
-
-
-</div>
-
-<!-- cantidad del producto -->
-
-<div class="col-xs-3">
-
-  <input type="number" class="form-control" id="nuevaCantidadProducto" name="nuevaCantidadProducto" min="1" placeholder="0" required>
-  
-
-</div>
-
-<!-- precio del producto -->
-
-<div class="col-xs-3" style="padding-left:0px">
-<div class="input-group">
-  
-  <span class="input-group-addon"><i>Q</i></span>
-
-<input type="number" min="1" class="form-control" id="nuevaPrecioProducto" name="nuevoPrecioProducto" placeholder="0000000" readonly required>
-  
-      </div>
-  
-    </div>
 
 </div>
 
@@ -273,7 +280,7 @@ placeholder="Numero de transaccion" required>
     
     <div class="box-body">
       
-   <table class="table table-bordered table-striped dt-responsive tablas">
+   <table class="table table-bordered table-striped dt-responsive tablaVentas" width="100%">
      
 <thead>
          
@@ -290,24 +297,7 @@ placeholder="Numero de transaccion" required>
 
   </thead>
 
-<tbody>
-  
 
-                <tr>
-            <td>1.</td>                 
-            <td><img src="vistas/img/productos/default/default.png" class="img-thumbnail" width="40px"></td>
-            <td>00123</td>
-            <td>Lorem ipsum dolor sit amet</td>       
-            <td>20</td>                 
-            <td>                 
-            <div class="btn-group-xs">
-
-            <button type="button" class="btn btn-success">Agregar venta</button> 
-            </div>
-            </td>
-      </tr>
-
-  </tbody>
 
    </table>
 
