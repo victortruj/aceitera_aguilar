@@ -144,7 +144,7 @@
  <!-- BTN AGREGAR PRODUCTO --> 
  <!-- se utiliza para dispositivos moviles-->
 
-<button type="button" class="btn-default hidden-lg">Agregar producto</button>
+<button type="button" class="btn-default hidden-lg btnAgregarProducto">Agregar producto</button>
 
 <hr>
 
