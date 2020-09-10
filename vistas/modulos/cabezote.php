@@ -51,7 +51,7 @@ BARRA DE NAVEGACION
 					}else{
 
 
-						echo '<img src="vistas/img/usuarios/default/anonymous.png" class="user-image">';
+						echo '<img src="vistas/img/usuarios/default/default.png" class="user-image">';
 
 					}
 
@@ -70,7 +70,7 @@ BARRA DE NAVEGACION
 
 		  		<div class="pull-right">
 
-		  			<a href="salir" class="btn btn-default btn-flat">Salir</a>
+		  			<a href="salir" class="btn btn-danger btn-flat">Salir</a>
 		  			
 
 		  		</div>
