@@ -171,6 +171,7 @@
   
 <tr>
   
+  <!-- impuesto -->
   <td style="width: 50%">
     
 
@@ -187,6 +188,7 @@ placeholder="0" required>
 
   </td>
 
+<!-- total -->
   <td style="width: 50%">
     
 

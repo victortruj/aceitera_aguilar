@@ -123,9 +123,9 @@ $(".tablaVentas tbody").on("click", "button.agregarProducto", function(){
 
           '</div>') 
 
-      //     // SUMAR TOTAL DE PRECIOS
+       // SUMAR TOTAL DE PRECIOS
 
-      //     sumarTotalPrecios()
+           sumarTotalPrecios()
 
       //     // AGREGAR IMPUESTO
 
@@ -208,16 +208,16 @@ $(".formularioVenta").on("click", "button.quitarProducto", function(){
 
   if($(".nuevoProducto").children().length == 0){
 
-    $("#nuevoImpuestoVenta").val(0);
+    // $("#nuevoImpuestoVenta").val(0);
     $("#nuevoTotalVenta").val(0);
     $("#totalVenta").val(0);
     $("#nuevoTotalVenta").attr("total",0);
 
   }else{
 
-    // // SUMAR TOTAL DE PRECIOS
+   // SUMAR TOTAL DE PRECIOS
 
-    //   sumarTotalPrecios()
+      sumarTotalPrecios()
 
     //   // AGREGAR IMPUESTO
           
@@ -322,13 +322,13 @@ $(".btnAgregarProducto").click(function(){
 
            }
 
-           // SUMAR TOTAL DE PRECIOS
+      // SUMAR TOTAL DE PRECIOS
 
         sumarTotalPrecios()
 
         // AGREGAR IMPUESTO
           
-          agregarImpuesto()
+          // agregarImpuesto()
 
           // PONER FORMATO AL PRECIO DE LOS PRODUCTOS
 
@@ -436,10 +436,42 @@ $(".formularioVenta").on("change", "input.nuevaCantidadProducto", function(){
 
   // AGREGAR IMPUESTO
           
-    agregarImpuesto()
+    // agregarImpuesto()
 
     // AGRUPAR PRODUCTOS EN FORMATO JSON
 
-    listarProductos()
+    // listarProductos()
 
 })
+
+/*=============================================
+SUMAR TODOS LOS PRECIOS
+=============================================*/
+
+function sumarTotalPrecios(){
+
+  var precioItem = $(".nuevoPrecioProducto");
+  
+  var arraySumaPrecio = [];  
+
+  for(var i = 0; i < precioItem.length; i++){
+
+     arraySumaPrecio.push(Number($(precioItem[i]).val()));
+    
+     
+  }
+
+  function sumaArrayPrecios(total, numero){
+
+    return total + numero;
+
+  }
+
+  var sumaTotalPrecio = arraySumaPrecio.reduce(sumaArrayPrecios);
+  
+  $("#nuevoTotalVenta").val(sumaTotalPrecio);
+  $("#totalVenta").val(sumaTotalPrecio);
+  $("#nuevoTotalVenta").attr("total",sumaTotalPrecio);
+
+
+}
