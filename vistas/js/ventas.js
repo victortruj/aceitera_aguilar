@@ -385,3 +385,61 @@ $(".formularioVenta").on("change", "select.nuevaDescripcionProducto", function()
 
       })
 })
+
+
+/*=============================================
+MODIFICAR LA CANTIDAD
+=============================================*/
+
+$(".formularioVenta").on("change", "input.nuevaCantidadProducto", function(){
+
+  var precio = $(this).parent().parent().children(".ingresoPrecio").children().children(".nuevoPrecioProducto");
+
+  var precioFinal = $(this).val() * precio.attr("precioReal");
+  
+  precio.val(precioFinal);
+
+  var nuevoStock = Number($(this).attr("stock")) - $(this).val();
+
+  $(this).attr("nuevoStock", nuevoStock);
+
+  if(Number($(this).val()) > Number($(this).attr("stock"))){
+
+    /*=============================================
+    SI LA CANTIDAD ES SUPERIOR AL STOCK REGRESAR VALORES INICIALES
+    =============================================*/
+
+    $(this).val(1);
+
+    $(this).attr("nuevoStock", $(this).attr("stock"));
+
+    var precioFinal = $(this).val() * precio.attr("precioReal");
+
+    precio.val(precioFinal);
+
+    sumarTotalPrecios();
+
+    swal({
+        title: "La cantidad supera el Stock",
+        text: "¡Sólo hay "+$(this).attr("stock")+" unidades!",
+        type: "error",
+        confirmButtonText: "¡Cerrar!"
+      });
+
+      return;
+
+  }
+
+  // SUMAR TOTAL DE PRECIOS
+
+  sumarTotalPrecios()
+
+  // AGREGAR IMPUESTO
+          
+    agregarImpuesto()
+
+    // AGRUPAR PRODUCTOS EN FORMATO JSON
+
+    listarProductos()
+
+})
