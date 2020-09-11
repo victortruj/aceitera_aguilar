@@ -127,9 +127,9 @@ $(".tablaVentas tbody").on("click", "button.agregarProducto", function(){
 
            sumarTotalPrecios()
 
-      //     // AGREGAR IMPUESTO
+      // AGREGAR IMPUESTO
 
-      //     agregarImpuesto()
+      agregarImpuesto()
 
       //     // AGRUPAR PRODUCTOS EN FORMATO JSON
 
@@ -208,7 +208,7 @@ $(".formularioVenta").on("click", "button.quitarProducto", function(){
 
   if($(".nuevoProducto").children().length == 0){
 
-    // $("#nuevoImpuestoVenta").val(0);
+    $("#nuevoImpuestoVenta").val(0);
     $("#nuevoTotalVenta").val(0);
     $("#totalVenta").val(0);
     $("#nuevoTotalVenta").attr("total",0);
@@ -219,9 +219,9 @@ $(".formularioVenta").on("click", "button.quitarProducto", function(){
 
       sumarTotalPrecios()
 
-    //   // AGREGAR IMPUESTO
+    // AGREGAR IMPUESTO
           
-    //     agregarImpuesto()
+    agregarImpuesto()
 
     //     // AGRUPAR PRODUCTOS EN FORMATO JSON
 
@@ -328,7 +328,7 @@ $(".btnAgregarProducto").click(function(){
 
         // AGREGAR IMPUESTO
           
-          // agregarImpuesto()
+          agregarImpuesto()
 
           // PONER FORMATO AL PRECIO DE LOS PRODUCTOS
 
@@ -436,7 +436,7 @@ $(".formularioVenta").on("change", "input.nuevaCantidadProducto", function(){
 
   // AGREGAR IMPUESTO
           
-    // agregarImpuesto()
+  agregarImpuesto()
 
     // AGRUPAR PRODUCTOS EN FORMATO JSON
 
@@ -475,3 +475,36 @@ function sumarTotalPrecios(){
 
 
 }
+
+/*=============================================
+FUNCIÓN AGREGAR IMPUESTO
+=============================================*/
+
+function agregarImpuesto(){
+
+  var impuesto = $("#nuevoImpuestoVenta").val();
+  var precioTotal = $("#nuevoTotalVenta").attr("total");
+
+  var precioImpuesto = Number(precioTotal * impuesto/100);
+
+  var totalConImpuesto = Number(precioImpuesto) + Number(precioTotal);
+  
+  $("#nuevoTotalVenta").val(totalConImpuesto);
+
+  $("#totalVenta").val(totalConImpuesto);
+
+  $("#nuevoPrecioImpuesto").val(precioImpuesto);
+
+  $("#nuevoPrecioNeto").val(precioTotal);
+
+}
+
+/*=============================================
+CUANDO CAMBIA EL IMPUESTO
+=============================================*/
+
+$("#nuevoImpuestoVenta").change(function(){
+
+  agregarImpuesto();
+
+});
