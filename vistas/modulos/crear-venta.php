@@ -179,7 +179,7 @@
   
 
 <input type="number" class="form-control" min="0" id="nuevoImpuestoVenta" name="nuevoImpuestoVenta" 
-placeholder="0" required>
+placeholder="00" required>
 
 
   <input type="hidden" name="nuevoPrecioImpuesto" id="nuevoPrecioImpuesto" required>
@@ -201,8 +201,8 @@ placeholder="0" required>
   
 <span class="input-group-addon"><i>Q</i></span>
 
-<input type="number" min="1" class="form-control" id="nuevoTotalVenta" name="nuevoTotalVenta" total="" 
-placeholder="000000" readonly required>
+<input type="text" class="form-control" id="nuevoTotalVenta" name="nuevoTotalVenta" total="" 
+placeholder="00000" readonly required>
 
       </div>
 

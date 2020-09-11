@@ -90,6 +90,11 @@ PLUGINS DE JAVASCRIPT
   <script src="vistas/plugins/input-mask/jquery.inputmask.extensions.js"></script>
 
 
+  <!-- jQuery Number -->
+  <script src="vistas/plugins/jqueryNumber/jquerynumber.min.js"></script>
+
+
+
 
 </head>
 

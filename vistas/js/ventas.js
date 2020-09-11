@@ -135,9 +135,9 @@ $(".tablaVentas tbody").on("click", "button.agregarProducto", function(){
 
       //     listarProductos()
 
-      //     // PONER FORMATO AL PRECIO DE LOS PRODUCTOS
+       // PONER FORMATO AL PRECIO DE LOS PRODUCTOS
 
-      //     $(".nuevoPrecioProducto").number(true, 2);
+       $(".nuevoPrecioProducto").number(true, 2);
 
 
       // localStorage.removeItem("quitarProducto");
@@ -508,3 +508,9 @@ $("#nuevoImpuestoVenta").change(function(){
   agregarImpuesto();
 
 });
+
+/*=============================================
+FORMATO AL PRECIO FINAL
+=============================================*/
+
+$("#nuevoTotalVenta").number(true, 2);
