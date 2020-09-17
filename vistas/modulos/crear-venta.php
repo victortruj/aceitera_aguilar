@@ -231,7 +231,7 @@ placeholder="00000" readonly required>
                      <div class="input-group">
                   
                       <select class="form-control" id="nuevoMetodoPago" name="nuevoMetodoPago" required>
-                        <option value="">Tipo de pago</option>
+                        <option value="">Seleccione tipo de pago</option>
                         <option value="Efectivo">Efectivo</option>
                         <option value="TC">Tarjeta Crédito</option>
                         <option value="TD">Tarjeta Débito</option>                  
@@ -241,27 +241,17 @@ placeholder="00000" readonly required>
 
                   </div>
 
-<div class="col-xs-6" style="padding-left:0px">
-                    
- <div class="input-group">
-                  
-  <input type="number" class="form-control" id="nuevoCodigoTransaccion" name="nuevoCodigoTransaccion" 
-placeholder="Numero de transaccion" required>
+                   <div class="cajasMetodoPago"></div>
 
-<span class="input-group-addon"><i class="fa fa-lock"></i></span> 
-                    
+                  <!-- <input type="hidden" id="listaMetodoPago" name="listaMetodoPago"> -->
 
-        </div>
+                </div>
 
-       </div>
-    
-      </div>
+                <br>
+      
+              </div>
 
-      <br>
-
-    </div>
-  
-  </div>
+          </div>
 
 <div class="box-footer">
   
