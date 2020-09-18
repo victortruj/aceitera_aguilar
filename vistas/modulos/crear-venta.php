@@ -204,6 +204,8 @@ placeholder="00" required>
 <input type="text" class="form-control" id="nuevoTotalVenta" name="nuevoTotalVenta" total="" 
 placeholder="00000" readonly required>
 
+  <input type="hidden" name="totalVenta" id="totalVenta">
+
       </div>
 
     </td>
@@ -260,6 +262,14 @@ placeholder="00000" readonly required>
     </div>
    
    </form>
+
+        <?php
+
+          $guardarVenta = new ControladorVentas();
+          $guardarVenta -> ctrCrearVenta();
+          
+        ?>
+
  
   </div>
 
