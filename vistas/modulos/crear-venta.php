@@ -243,7 +243,7 @@ placeholder="00000" readonly required>
 
                    <div class="cajasMetodoPago"></div>
 
-                  <!-- <input type="hidden" id="listaMetodoPago" name="listaMetodoPago"> -->
+                  <input type="hidden" id="listaMetodoPago" name="listaMetodoPago">
 
                 </div>
 
