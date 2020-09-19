@@ -57,40 +57,73 @@
         </thead>
 
         <tbody>
-          
-          <tr>
 
-            <td>1</td>
 
-            <td>78516666541</td>
+       <?php
 
-            <td>Victor Trujillo</td>
+         $item = null;
+         $valor = null;
 
-            <td>Marlon Aguilar</td>
+         $respuesta = ControladorVentas::ctrMostrarVentas($item, $valor);
+         
 
-            <td>Efectivo</td>
+          foreach ($respuesta as $key => $value) {
+           
+           echo '<tr>
 
-            <td>Q 1,000.00</td>
+                  <td>'.($key+1).'</td>
 
-            <td>Q 1,190.00</td>
+                  <td>'.$value["codigo"].'</td>';
 
-            <td>2020-09-05 12:05:32</td>
+                  $itemCliente = "id";
+                  $valorCliente = $value["id_cliente"];
 
-            <td>
+                  $respuestaCliente = ControladorClientes::ctrMostrarClientes($itemCliente, $valorCliente);
 
-              <div class="btn-group-xs">
-                  
-                <button class="btn btn-success"><i class="fa fa-pencil-square-o"></i> Modificar</button>
+                  echo '<td>'.$respuestaCliente["nombre"].'</td>';
 
-                <button class="btn btn-danger"><i class="fa fa-trash-o"></i> Eliminar</button>
+                  $itemUsuario = "id";
+                  $valorUsuario = $value["id_vendedor"];
 
-              </div>  
+                  $respuestaUsuario = ControladorUsuarios::ctrMostrarUsuarios($itemUsuario, $valorUsuario);
 
-            </td>
+                  echo '<td>'.$respuestaUsuario["nombre"].'</td>
 
-          </tr>
+                  <td>'.$value["metodo_pago"].'</td>
 
-          
+                  <td>$ '.number_format($value["neto"],2).'</td>
+
+                  <td>$ '.number_format($value["total"],2).'</td>
+
+                  <td>'.$value["fecha"].'</td>
+
+                  <td>
+
+                    <div class="btn-group">
+                        
+                      <button class="btn btn-info btnImprimirFactura" codigoVenta="'.$value["codigo"].'">
+
+                        <i class="fa fa-print"></i>
+
+                      </button>';
+
+                      if($_SESSION["perfil"] == "Administrador"){
+
+                      echo '<button class="btn btn-warning btnEditarVenta" idVenta="'.$value["id"].'"><i class="fa fa-pencil-square-o">Modificar</i></button>
+
+                      <button class="btn btn-danger btnEliminarVenta" idVenta="'.$value["id"].'"><i class="fa fa-trash-o"></i>Eliminar</button>';
+
+                    }
+
+                    echo '</div>  
+
+                  </td>
+
+                </tr>';
+            }
+
+        ?>
+
         </tbody>
 
        </table>

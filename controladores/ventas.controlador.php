@@ -2,9 +2,9 @@
 
 class ControladorVentas{
 
-
-		// MOSTRAR VENTAS
-	
+	/*=============================================
+	MOSTRAR VENTAS
+	=============================================*/
 
 	static public function ctrMostrarVentas($item, $valor){
 
@@ -16,28 +16,17 @@ class ControladorVentas{
 
 	}
 
-
-
-
-
 	/*=============================================
 	CREAR VENTA
 	=============================================*/
 
 	static public function ctrCrearVenta(){
 
+		if(isset($_POST["nuevaVenta"])){
 
-	if(isset($_POST["nuevaVenta"])){
-
-
-		/*=============================================
+			/*=============================================
 			ACTUALIZAR LAS COMPRAS DEL CLIENTE Y REDUCIR EL STOCK Y AUMENTAR LAS VENTAS DE LOS PRODUCTOS
 			=============================================*/
-
-			if($_POST["listaProductos"] == ""){
-
-				
-			}
 
 
 			$listaProductos = json_decode($_POST["listaProductos"], true);
@@ -80,7 +69,15 @@ class ControladorVentas{
 
 			$comprasCliente = ModeloClientes::mdlActualizarCliente($tablaClientes, $item1a, $valor1a, $valor);
 
-			
+			$item1b = "ultima_compra";
+
+			date_default_timezone_set('America/Guatemala');
+
+			$fecha = date('Y-m-d');
+			$hora = date('H:i:s');
+			$valor1b = $fecha.' '.$hora;
+
+			$fechaCliente = ModeloClientes::mdlActualizarCliente($tablaClientes, $item1b, $valor1b, $valor);
 
 			/*=============================================
 			GUARDAR LA COMPRA
@@ -120,9 +117,10 @@ class ControladorVentas{
 
 				</script>';
 
+			}
+
 		}
 
 	}
 
 }
-
