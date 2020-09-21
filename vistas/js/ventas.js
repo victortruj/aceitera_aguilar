@@ -671,4 +671,16 @@ function listarMetodos(){
 
 }
 
+/*=============================================
+BOTON EDITAR VENTA
+=============================================*/
+$(".tablas").on("click", ".btnEditarVenta", function(){
+
+  var idVenta = $(this).attr("idVenta");
+
+  window.location = "index.php?ruta=editar-venta&idVenta="+idVenta;
+
+
+})
+
 

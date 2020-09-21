@@ -10,9 +10,7 @@
 
     <ol class="breadcrumb">
       
-      <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
-      
-      <li class="active">Administrar ventas</li>
+      <li><a href="inicio"><i class="fa fa-home"></i> Inicio</a></li>
     
     </ol>
 
@@ -91,31 +89,24 @@
 
                   <td>'.$value["metodo_pago"].'</td>
 
-                  <td>$ '.number_format($value["neto"],2).'</td>
+                  <td>Q '.number_format($value["neto"],2).'</td>
 
-                  <td>$ '.number_format($value["total"],2).'</td>
+                  <td>Q '.number_format($value["total"],2).'</td>
 
                   <td>'.$value["fecha"].'</td>
 
                   <td>
 
-                    <div class="btn-group">
+                    <div class="btn-group-xs">
                         
-                      <button class="btn btn-info btnImprimirFactura" codigoVenta="'.$value["codigo"].'">
+                     
+                      
+                      <button class="btn btn-success btnEditarVenta" idVenta="'.$value["id"].'"><i class="fa fa-pencil-square-o"> Modificar</i></button>
 
-                        <i class="fa fa-print"></i>
+                      <button class="btn btn-danger btnEliminarVenta" idVenta="'.$value["id"].'"><i class="fa fa-trash-o"></i> Eliminar</button>
 
-                      </button>';
 
-                      if($_SESSION["perfil"] == "Administrador"){
-
-                      echo '<button class="btn btn-warning btnEditarVenta" idVenta="'.$value["id"].'"><i class="fa fa-pencil-square-o">Modificar</i></button>
-
-                      <button class="btn btn-danger btnEliminarVenta" idVenta="'.$value["id"].'"><i class="fa fa-trash-o"></i>Eliminar</button>';
-
-                    }
-
-                    echo '</div>  
+                    </div>  
 
                   </td>
 
