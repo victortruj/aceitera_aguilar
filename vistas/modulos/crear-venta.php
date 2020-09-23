@@ -21,7 +21,9 @@
 
   <div class="row">
 
-    <!-- FORMULARIO -->
+    <!--=====================================
+      EL FORMULARIO
+      ======================================-->
 
   <div class="col-lg-5 col-xs-12">
         
@@ -35,11 +37,13 @@
   
               <div class="box">
 
-<!-- Vendedor ENTRADA-->
+ <!--=====================================
+                ENTRADA DEL VENDEDOR
+  ======================================-->
 
-  <div class="form-group">
+<div class="form-group">
     
-    <div class="input-group">
+  <div class="input-group">
       
       <span class="input-group-addon"><i class="fa fa-user"></i></span> 
 
@@ -47,11 +51,13 @@
 
        <input type="hidden" name="idVendedor" value="<?php echo $_SESSION["id"]; ?>">
 
+ </div>
 
-    </div>
-  </div>
+</div>
 
-<!-- codigo venta  -->
+ <!--=====================================
+                ENTRADA DEL CÓDIGO
+  ======================================--> 
 
 
 <div class="form-group">
@@ -69,7 +75,7 @@
 
       if(!$ventas){
 
-      echo '<input type="text" class="form-control" id="nuevaVenta" name="nuevaVenta" value="1" readonly>';
+      echo '<input type="text" class="form-control" id="nuevaVenta" name="nuevaVenta" value="1001" readonly>';
                   
 
       }else{
@@ -81,19 +87,19 @@
       $codigo = $value["codigo"] + 1;
 
 
-
     echo '<input type="text" class="form-control" id="nuevaVenta" name="nuevaVenta" value="'.$codigo.'" readonly>';
                   
-
     }
 
     ?>
-                    
 
-    </div>
-  </div>
+ </div>
 
-<!-- cliente -->
+</div>
+
+ <!--=====================================
+                ENTRADA DEL CLIENTE
+  ======================================--> 
 
 <div class="form-group">
     
@@ -121,36 +127,43 @@
       }
 
   ?>
-
       
 </select>
 
 
       <span class="input-group-addon"><button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#modalAgregarCliente" data-dismiss="modal">Agregar cliente</button></span>
 
-
     </div>
   </div>
 
-<!-- AGREGAR PRODUCTO -->
+
+  <!--=====================================
+      ENTRADA PARA AGREGAR PRODUCTO
+  ======================================--> 
 
 
  <div class="form-group row nuevoProducto">
    
-  
-
 </div>
 
- <!-- BTN AGREGAR PRODUCTO --> 
+ <input type="hidden" id="listaProductos" name="listaProductos">
+
+  <!--=====================================
+       BOTÓN PARA AGREGAR PRODUCTO
+  ======================================-->
+
  <!-- se utiliza para dispositivos moviles-->
 
-<button type="button" class="btn-default hidden-lg btnAgregarProducto">Agregar producto</button>
+<button type="button" class="btn btn-success btn-xs hidden-lg btnAgregarProducto">Agregar producto</button>
 
 <hr>
 
+
 <div class="row">
 
-  <!-- IMPUESTOS / TOTAL -->
+    <!--=====================================
+        ENTRADA IMPUESTOS Y TOTAL
+    ======================================-->
   
 <div class="col-xs-8 pull-right">
   
@@ -224,7 +237,9 @@ placeholder="00000" readonly required>
 
 <hr>
 
-  <!-- METODO DE PAGO -->
+   <!--=====================================
+                ENTRADA MÉTODO DE PAGO
+  ======================================-->
 
  <div class="form-group row">
   
@@ -276,8 +291,9 @@ placeholder="00000" readonly required>
 </div>    
 
 
- <!-- TABLA DE PRODUCTOS -->
-
+  <!--=====================================
+      LA TABLA DE PRODUCTOS
+  ======================================-->
 
  <div class="col-lg-7 hidden-md hidden-sm hidden-xs">
    
@@ -300,30 +316,21 @@ placeholder="00000" readonly required>
            <th>Stock</th>
           <th>Acciones</th>
 
-</tr> 
-
-  </thead>
-
-
-
-   </table>
-
-
-    </div>
-
-
+        </tr> 
+       
+       </thead>
+      
+      </table>
+     
+     </div>
     
-  </div>
-
-
- </div>
-
-  </div>
+    </div>
+   
+   </div>
   
-
-</section>
-  
-
+  </div>
+ 
+ </section>
 
 </div>
 
@@ -359,7 +366,7 @@ Modal agregar cliente
 
           <div class="box-body">
 
-            <!-- Nombre -->
+            <!-- entrada para el Nombre -->
             
             <div class="form-group">
               
@@ -373,7 +380,7 @@ Modal agregar cliente
 
             </div>
 
-            <!--DPI-->
+            <!--Entrada para el documento DPI-->
             
             <div class="form-group">
               
@@ -387,7 +394,7 @@ Modal agregar cliente
 
             </div>
 
-            <!-- Correo -->
+            <!-- Entrada para el Correo electronico -->
             
             <div class="form-group">
               
@@ -395,13 +402,13 @@ Modal agregar cliente
               
                 <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span> 
 
-                <input type="email" class="form-control input-lg" name="nuevoEmail" placeholder="Correo" required>
+                <input type="email" class="form-control input-lg" name="nuevoEmail" placeholder="Correo electronico" required>
 
               </div>
 
             </div>
 
-            <!-- Telefono -->
+            <!-- Entrada para el Telefono -->
             
             <div class="form-group">
               
@@ -415,7 +422,7 @@ Modal agregar cliente
 
             </div>
 
-            <!-- Direccion -->
+            <!-- Entrada para la Direccion -->
             
             <div class="form-group">
               
@@ -429,7 +436,7 @@ Modal agregar cliente
 
             </div>
 
-             <!-- Fecha Nacimiento -->
+             <!-- Entrada para la Fecha Nacimiento -->
             
             <div class="form-group">
               

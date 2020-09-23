@@ -41,7 +41,7 @@
          <tr>
            
            <th style="width:10px">#</th>
-           <th>Numero de factura</th>
+           <th>Codigo venta</th>
            <th>Cliente</th>
            <th>Vendedor</th>
            <th>Forma de pago</th>
@@ -100,7 +100,6 @@
                     <div class="btn-group-xs">
                         
                      
-                      
                       <button class="btn btn-success btnEditarVenta" idVenta="'.$value["id"].'"><i class="fa fa-pencil-square-o"> Modificar</i></button>
 
                       <button class="btn btn-danger btnEliminarVenta" idVenta="'.$value["id"].'"><i class="fa fa-trash-o"></i> Eliminar</button>
@@ -118,6 +117,13 @@
         </tbody>
 
        </table>
+
+       <?php
+
+      $eliminarVenta = new ControladorVentas();
+      $eliminarVenta -> ctrEliminarVenta();
+
+      ?>
 
       </div>
 

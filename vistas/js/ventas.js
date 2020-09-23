@@ -1,4 +1,5 @@
 
+
  $('.tablaVentas').DataTable( {
     "ajax": "ajax/datatable-ventas.ajax.php",
     "deferRender": true,
@@ -33,8 +34,9 @@
 
 } );
 
-
-// SE AGREGAN PRODUCTOS A LA VENTA DESDE LA TABLA
+/*=============================================
+AGREGANDO PRODUCTOS A LA VENTA DESDE LA TABLA
+=============================================*/
 
 
 $(".tablaVentas tbody").on("click", "button.agregarProducto", function(){
@@ -171,7 +173,9 @@ $(".tablaVentas").on("draw.dt", function(){
 
 })
 
-// // RECUPERAR BOTON Y ELIMINAR PRODUCTOS DE VENTA
+/*=============================================
+QUITAR PRODUCTOS DE LA VENTA Y RECUPERAR BOTÓN
+=============================================*/
 
 
 var idQuitarProducto = [];
@@ -232,7 +236,9 @@ $(".formularioVenta").on("click", "button.quitarProducto", function(){
 })
 
 
-// AGREGANDO PRODUCTOS DESDE EL BOTÓN PARA DISPOSITIVOS
+/*=============================================
+AGREGANDO PRODUCTOS DESDE EL BOTÓN PARA DISPOSITIVOS
+=============================================*/
 
 var numProducto = 0;
 
@@ -280,7 +286,7 @@ $(".btnAgregarProducto").click(function(){
 
             '<div class="col-xs-3 ingresoCantidad">'+
               
-               '<input type="number" class="form-control nuevaCantidadProducto" name="nuevaCantidadProducto" min="1" value="0" stock nuevoStock required>'+
+               '<input type="number" class="form-control nuevaCantidadProducto" name="nuevaCantidadProducto" min="1" value="1" stock nuevoStock required>'+
 
             '</div>' +
 
@@ -314,11 +320,8 @@ $(".btnAgregarProducto").click(function(){
             '<option idProducto="'+item.id+'" value="'+item.descripcion+'">'+item.descripcion+'</option>'
              
               )
-
              
-             }
-
-             
+             }            
 
            }
 
@@ -342,8 +345,9 @@ $(".btnAgregarProducto").click(function(){
 })
 
 
-// SELECCIONAR PRODUCTO
-
+/*=============================================
+SELECCIONAR PRODUCTO
+=============================================*/
 
 $(".formularioVenta").on("change", "select.nuevaDescripcionProducto", function(){
 
@@ -565,7 +569,7 @@ $("#nuevoMetodoPago").change(function(){
 
 
         // Listar método en la entrada
-       // listarMetodos()
+       listarMetodos()
 
   }else{
 
@@ -706,7 +710,7 @@ function quitarAgregarProducto(){
 
       if($(botonesTabla[j]).attr("idProducto") == boton){
 
-        $(botonesTabla[j]).removeClass("btn-primary agregarProducto");
+        $(botonesTabla[j]).removeClass("btn-success agregarProducto");
         $(botonesTabla[j]).addClass("btn-default");
 
       }
@@ -740,7 +744,7 @@ $(".tablas").on("click", ".btnEliminarVenta", function(){
         text: "¡Si no lo está puede cancelar la accíón!",
         type: 'warning',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
+        confirmButtonColor: '#2d862d',
         cancelButtonColor: '#d33',
         cancelButtonText: 'Cancelar',
         confirmButtonText: 'Si, borrar venta!'
