@@ -1,5 +1,4 @@
 <header class="main-header">
-	
 
 <!--=====================================
 Logotipo
@@ -24,9 +23,9 @@ BARRA DE NAVEGACION
 <nav class="navbar navbar-static-top" role="navigation">
 
 
-	<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+ <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
         	
-        	<span class="sr-only">Toggle navigation</span>
+ <span class="sr-only">Toggle navigation</span>
 
       	</a>
 	
@@ -40,8 +39,8 @@ BARRA DE NAVEGACION
 				<li class="dropdown user user-menu">
 
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							
 
-						
 					<?php
 
 					if($_SESSION["foto"] != ""){
@@ -58,35 +57,38 @@ BARRA DE NAVEGACION
 
 					?>
 
-						<span class="hidden-xs"><?php  echo $_SESSION["nombre"]; ?></span>
+						<span class="hidden-xs"><?php  echo $_SESSION["nombre"]; ?>
+							
+                         <span class="caret"></span>
+
+						</span>
 						
 					</a>
 
-					<!-- Dropdown-toggle -->
+		<!-- Dropdown-toggle -->
+
 
 		  <ul class="dropdown-menu">
 
-		  	<li class="user-body">
+          <li class="user-body">
 
-		  		<div class="pull-right">
+		  <div class="pull-right">
+ 		
+		 
+		  <a href="salir" class="btn btn-danger btn-xs"><i class="fa fa-times"></i> Cerrar sesión</a>
 
-		  			<a href="salir" class="btn btn-danger btn-flat">Salir</a>
-		  			
-
-		  		</div>
-		  		
-		  		</li>
-		  	    
-		  	    </ul>
-					
-			</li>
-				
-		</ul>
-
-	</div>
-
-</nav>
-
-
+        </div>		  		
+       
+       </li>
+      
+      </ul>			
+     
+     </li>
+    
+    </ul>
+   
+   </div>
+ 
+ </nav>
 
 </header>
