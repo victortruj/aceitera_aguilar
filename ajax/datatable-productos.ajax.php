@@ -65,13 +65,7 @@ class TablaProductos{
 		  	$botones = "<div class='btn-group-xs'><button class='btn btn-success btnEditarProducto' idProducto='".$productos[$i]["id"]."' data-toggle='modal' data-target='#modalEditarProducto'><i class='fa fa-pencil-square-o'></i> Modificar</button><button class='btn btn-danger btnEliminarProducto' idProducto='".$productos[$i]["id"]."' codigo='".$productos[$i]["codigo"]."' imagen='".$productos[$i]["imagen"]."'><i class='fa fa-trash-o'></i> Eliminar</button></div>"; 
 
 
-
-
-  // <td>Q '.number_format($value["neto"],2).'</td>
-
-  // <td>Q '.number_format($value["total"],2).'</td>
-
-
+// "'.$productos[$i]["precio_compra"].'",
 
 
 		  	$datosJson .='[
@@ -81,8 +75,8 @@ class TablaProductos{
 			      "'.$productos[$i]["descripcion"].'",
 			      "'.$categorias["categoria"].'",
 			      "'.$stock.'",
-			      "'.$productos[$i]["precio_compra"].'",
-			      "'.$productos[$i]["precio_venta"].'",
+			    "Q '.number_format($productos[$i]["precio_compra"],2).'",
+				"Q '.number_format($productos[$i]["precio_venta"],2).'",
 			      "'.$productos[$i]["fecha"].'",
 			      "'.$botones.'"
 			    ],';
