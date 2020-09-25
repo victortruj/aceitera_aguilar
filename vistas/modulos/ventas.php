@@ -56,16 +56,14 @@
 
         <tbody>
 
-
-       <?php
+        <?php
 
          $item = null;
          $valor = null;
 
          $respuesta = ControladorVentas::ctrMostrarVentas($item, $valor);
          
-
-          foreach ($respuesta as $key => $value) {
+        foreach ($respuesta as $key => $value) {
            
            echo '<tr>
 
@@ -125,10 +123,10 @@
 
       ?>
 
-      </div>
-
     </div>
-
+   
+   </div>
+  
   </section>
 
 </div>

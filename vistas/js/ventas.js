@@ -752,8 +752,8 @@ $(".tablas").on("click", ".btnEliminarVenta", function(){
         if (result.value) {
           
             window.location = "index.php?ruta=ventas&idVenta="+idVenta;
-        }
-
-  })
+  }
+ 
+ })
 
 })

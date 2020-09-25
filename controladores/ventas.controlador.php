@@ -237,7 +237,7 @@ class ControladorVentas{
 				$item1a_2 = "compras";
 				$valor1a_2 = array_sum($totalProductosComprados_2) + $traerCliente_2["compras"];
 
-				$comprasCliente_2 = ModeloClientes::mdlActualizarCliente($tablaClientes_2, $item1a_2, $valor1a_2, $valor_2);
+		$comprasCliente_2 = ModeloClientes::mdlActualizarCliente($tablaClientes_2, $item1a_2, $valor1a_2, $valor_2);
 
 				$item1b_2 = "ultima_compra";
 
@@ -247,7 +247,7 @@ class ControladorVentas{
 				$hora = date('H:i:s');
 				$valor1b_2 = $fecha.' '.$hora;
 
-				$fechaCliente_2 = ModeloClientes::mdlActualizarCliente($tablaClientes_2, $item1b_2, $valor1b_2, $valor_2);
+		$fechaCliente_2 = ModeloClientes::mdlActualizarCliente($tablaClientes_2, $item1b_2, $valor1b_2, $valor_2);
 
 			}
 
@@ -295,7 +295,7 @@ class ControladorVentas{
 	}
 /*=============================================
 	ELIMINAR VENTA
-=============================================*/¿¿
+=============================================*/
 
 	static public function ctrEliminarVenta(){
 
