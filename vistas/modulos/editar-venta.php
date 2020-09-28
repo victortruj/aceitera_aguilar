@@ -81,7 +81,7 @@
                 ENTRADA DEL CÓDIGO
                 ======================================--> 
 
-                <div class="form-group">
+                <!-- <div class="form-group">
                   
                   <div class="input-group">
                     
@@ -91,7 +91,7 @@
                
                   </div>
                 
-                </div>
+                </div> -->
 
                 <!--=====================================
                 ENTRADA DEL CLIENTE
@@ -101,7 +101,7 @@
                   
                   <div class="input-group">
                     
-                    <span class="input-group-addon"><i class="fa fa-users"></i></span>
+                    <span class="input-group-addon"><i class="fa fa-user-plus"></i></span>
                     
                     <select class="form-control" id="seleccionarCliente" name="seleccionarCliente" required>
 

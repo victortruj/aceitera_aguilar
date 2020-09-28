@@ -40,13 +40,16 @@ BARRA DE NAVEGACION
 
 
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							
+
+					<!-- <i class="fa fa-user"></i> -->
+
+					<!-- eliminar -->
 
 					<?php
 
 					if($_SESSION["foto"] != ""){
 
-						echo '<img src="'.$_SESSION["foto"].'" class="user-image">';
+					echo '<img src="'.$_SESSION["foto"].'" class="user-image">';
 
 					}else{
 
@@ -56,7 +59,7 @@ BARRA DE NAVEGACION
 					}
 
 
-					?>
+					?> 
 
 						 <span class="hidden-xs"><?php  echo $_SESSION["nombre"]; ?></span> 
 						

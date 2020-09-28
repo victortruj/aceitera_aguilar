@@ -49,6 +49,8 @@ $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
   radioClass   : 'iradio_minimal-green'
 })  
 
+// eliminar
+
 /*=============================================
  //input Mask
 =============================================*/

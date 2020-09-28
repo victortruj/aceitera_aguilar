@@ -4,7 +4,7 @@
     <section class="content-header">
       
       <h1>
-        <i class="fa fa-share-square-o"></i> Crear venta
+        <i class="fa fa-share-square-o"></i> Nueva venta
         
       </h1>
       

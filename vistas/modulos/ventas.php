@@ -26,7 +26,7 @@
     
         <button class="btn btn-success">
           
-          Agregar venta
+          Nueva venta
 
         </button>
 </a>

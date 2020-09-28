@@ -44,6 +44,7 @@
            <th style="width:15px">#</th>
            <th>Nombre</th>
            <th>Usuario</th>
+           <!-- eliminar -->
            <th>Foto</th>
            <th>Perfil</th>
            <th>Estado</th>
@@ -72,6 +73,7 @@
                   <td>'.$value["nombre"].'</td>
                   <td>'.$value["usuario"].'</td>';
 
+                  // eliminar
                   if($value["foto"] != ""){
 
                     echo '<td><img src="'.$value["foto"].'" class="img-thumbnail" width="40px"></td>';
@@ -80,7 +82,7 @@
 
                     echo '<td><img src="vistas/img/usuarios/default/default.png" class="img-thumbnail" width="40px"></td>';
 
-                  }
+                   }
 
                   echo '<td>'.$value["perfil"].'</td>';
 
@@ -238,7 +240,7 @@ Modal agregar usuario
 
             <!-- Subir foto -->
 
-             <div class="form-group">
+             <!-- <div class="form-group">
               
               <div class="panel">Subir foto</div>
 
@@ -248,7 +250,7 @@ Modal agregar usuario
 
               <img src="vistas/img/usuarios/default/default.png" class="img-thumbnail previsualizar" width="100px">
 
-            </div>
+            </div> -->
 
           </div>
 
