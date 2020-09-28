@@ -10,7 +10,7 @@
       
       <ol class="breadcrumb">
         
-        <li><a href="inicio"><i class="fa fa-home"></i>Inicio</a></li>
+        <li><a href="inicio"><i class="fa fa-home"></i> Inicio</a></li>
         
 
       </ol>
@@ -297,7 +297,7 @@ placeholder="00000" readonly required>
 
  <div class="col-lg-7 hidden-md hidden-sm hidden-xs">
    
-<div class="box box-danger">
+<div class="box box-success">
 
   <div class="box-header with-border"></div>
     

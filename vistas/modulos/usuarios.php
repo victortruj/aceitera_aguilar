@@ -22,7 +22,7 @@
   <section class="content">
  
       <!-- Default box -->
-      <div class="box">
+      <div class="box box-success">
         <div class="box-header with-border">
 
       <button class="btn btn-success" data-toggle="modal" data-target="#modalAgregarUsuario">
@@ -226,7 +226,7 @@ Modal agregar usuario
 
                   <option value="Administrador">Administrador</option>
 
-                  <option value="Especial">Especial</option>
+                  <option value="Bodega">Bodega</option>
 
                   <option value="Vendedor">Vendedor</option>
 
@@ -375,7 +375,7 @@ Modal editar usuario
 
                   <option value="Administrador">Administrador</option>
 
-                  <option value="Especial">Especial</option>
+                  <option value="Bodega">Bodega</option>
 
                   <option value="Vendedor">Vendedor</option>
 

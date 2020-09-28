@@ -22,21 +22,22 @@ BARRA DE NAVEGACION
 
 <nav class="navbar navbar-static-top" role="navigation">
 
+	<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
 
- <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-        	
- <span class="sr-only">Toggle navigation</span>
+		<span class="sr-only">Toggle navigation</span>
 
-      	</a>
+	</a>
 	
 		<!-- perfil de usuario -->
 
 
 		<div class="navbar-custom-menu">
 			
+			
 			<ul class="nav navbar-nav">
 
 				<li class="dropdown user user-menu">
+
 
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 							
@@ -57,11 +58,7 @@ BARRA DE NAVEGACION
 
 					?>
 
-						<span class="hidden-xs"><?php  echo $_SESSION["nombre"]; ?>
-							
-                         <span class="caret"></span>
-
-						</span>
+						 <span class="hidden-xs"><?php  echo $_SESSION["nombre"]; ?></span> 
 						
 					</a>
 
@@ -74,8 +71,11 @@ BARRA DE NAVEGACION
 
 		  <div class="pull-right">
  		
-		 
-		  <a href="salir" class="btn btn-danger btn-xs"><i class="fa fa-times"></i> Cerrar sesión</a>
+ 		
+
+		  <a href="salir" class="btn btn-danger btn-block btn-xs"><i class="fa fa-times"></i> Cerrar sesión</a> 
+
+         
 
         </div>		  		
        
