@@ -60,7 +60,7 @@
   ======================================--> 
 
 
-<div class="form-group">
+<!-- <div class="form-group">
     
     <div class="input-group">
       
@@ -96,7 +96,7 @@
  </div>
 
 </div>
-
+ -->
  <!--=====================================
                 ENTRADA DEL CLIENTE
   ======================================--> 
@@ -311,7 +311,8 @@ placeholder="00000" readonly required>
            
            <th style="width:15px">#</th>
            <th>Imagen</th>
-           <th>Código</th>
+          <!-- eliminar -->
+          <!--  <th>Código</th> -->
            <th>Descripción</th>
            <th>Stock</th>
           <th>Acciones</th>
@@ -382,7 +383,7 @@ Modal agregar cliente
 
             <!--Entrada para el documento DPI-->
             
-            <div class="form-group">
+            <!-- <div class="form-group">
               
               <div class="input-group">
               
@@ -393,7 +394,7 @@ Modal agregar cliente
               </div>
 
             </div>
-
+ -->
             <!-- Entrada para el Correo electronico -->
             
             <div class="form-group">
@@ -438,7 +439,7 @@ Modal agregar cliente
 
              <!-- Entrada para la Fecha Nacimiento -->
             
-            <div class="form-group">
+            <!-- <div class="form-group">
               
               <div class="input-group">
               
@@ -449,7 +450,7 @@ Modal agregar cliente
               </div>
 
             </div>
-  
+   -->
           </div>
 
         </div>

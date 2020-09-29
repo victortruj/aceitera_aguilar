@@ -44,8 +44,6 @@
            <th style="width:15px">#</th>
            <th>Nombre</th>
            <th>Usuario</th>
-           <!-- eliminar -->
-           <th>Foto</th>
            <th>Perfil</th>
            <th>Estado</th>
            <th>Último login</th>
@@ -53,20 +51,18 @@
 
          </tr> 
 
-        </thead>
+       </thead>
 
-        <tbody>
+       <tbody>
 
-
-          <?php 
+        <?php 
         
         $item = null;
         $valor = null;
       
          $usuarios = ControladorUsuarios::ctrMostrarUsuarios($item, $valor);
 
-
-          foreach ($usuarios as $key => $value){
+        foreach ($usuarios as $key => $value){
          
           echo ' <tr>
                   <td>'.($key+1).'</td>
@@ -74,15 +70,15 @@
                   <td>'.$value["usuario"].'</td>';
 
                   // eliminar
-                  if($value["foto"] != ""){
+                  // if($value["foto"] != ""){
 
-                    echo '<td><img src="'.$value["foto"].'" class="img-thumbnail" width="40px"></td>';
+                  //   echo '<td><img src="'.$value["foto"].'" class="img-thumbnail" width="40px"></td>';
 
-                  }else{
+                  // }else{
 
-                    echo '<td><img src="vistas/img/usuarios/default/default.png" class="img-thumbnail" width="40px"></td>';
+                  //   echo '<td><img src="vistas/img/usuarios/default/default.png" class="img-thumbnail" width="40px"></td>';
 
-                   }
+                  //  }
 
                   echo '<td>'.$value["perfil"].'</td>';
 
@@ -389,7 +385,7 @@ Modal editar usuario
 
             <!-- Subir foto-->
 
-             <div class="form-group">
+           <!--   <div class="form-group">
               
               <div class="panel">Subir foto</div>
 
@@ -401,7 +397,7 @@ Modal editar usuario
 
               <input type="hidden" name="fotoActual" id="fotoActual">
 
-            </div>
+            </div> -->
 
           </div>
 

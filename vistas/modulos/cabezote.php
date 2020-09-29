@@ -41,11 +41,11 @@ BARRA DE NAVEGACION
 
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 
-					<!-- <i class="fa fa-user"></i> -->
+					<i class="fa fa-user"></i>
 
 					<!-- eliminar -->
 
-					<?php
+				<!-- 	<?php
 
 					if($_SESSION["foto"] != ""){
 
@@ -59,7 +59,7 @@ BARRA DE NAVEGACION
 					}
 
 
-					?> 
+					?>  -->
 
 						 <span class="hidden-xs"><?php  echo $_SESSION["nombre"]; ?></span> 
 						

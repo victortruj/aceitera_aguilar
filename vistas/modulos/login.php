@@ -3,8 +3,7 @@
 <div class="login-box">
   <div class="login-logo">
 
-
-    <a  style="color:#088A29";><b>Aceitera Y Repuestos Aguilar </b><i class="fa fa-car"></i></a>
+      <i class="fa fa-car"></i>
 
   </div>
 

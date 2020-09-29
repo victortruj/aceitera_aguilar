@@ -24,11 +24,7 @@
   
   <a href="crear-venta">
     
-        <button class="btn btn-success">
-          
-          Nueva venta
-
-        </button>
+        <button class="btn btn-success">Nueva venta</button>
 </a>
       </div>
 
@@ -41,7 +37,8 @@
          <tr>
            
            <th style="width:10px">#</th>
-           <th>Codigo venta</th>
+           <!-- eliminar -->
+          <!--  <th>Codigo venta</th> -->
            <th>Cliente</th>
            <th>Vendedor</th>
            <th>Forma de pago</th>
@@ -67,9 +64,7 @@
            
            echo '<tr>
 
-                  <td>'.($key+1).'</td>
-
-                  <td>'.$value["codigo"].'</td>';
+                  <td>'.($key+1).'</td>';
 
                   $itemCliente = "id";
                   $valorCliente = $value["id_cliente"];

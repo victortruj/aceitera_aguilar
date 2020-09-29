@@ -45,11 +45,11 @@
            
            <th style="width:10px">#</th>
            <th>Nombre</th>
-           <th>DPI</th>
-           <th>Correo</th>
+          <!--  <th>DPI</th> -->
+           <!-- <th>Correo</th> -->
            <th>Telefono</th>
            <th>Direccion</th>
-           <th>Fecha nacimiento</th>
+           <!-- <th>Fecha nacimiento</th> -->
            <th>Total compras</th>
            <th>Ultima compra</th>
            <th>Ingreso al sistema</th>
@@ -78,15 +78,15 @@
 
                     <td>'.$value["nombre"].'</td>
 
-                    <td>'.$value["documento"].'</td>
+                 
 
-                    <td>'.$value["email"].'</td>
+                   
 
                     <td>'.$value["telefono"].'</td>
 
                     <td>'.$value["direccion"].'</td>
 
-                    <td>'.$value["fecha_nacimiento"].'</td>             
+                          
 
                     <td>'.$value["compras"].'</td>
 
@@ -175,7 +175,7 @@ Modal agregar cliente
 
             <!--DPI-->
             
-            <div class="form-group">
+           <!--  <div class="form-group">
               
               <div class="input-group">
               
@@ -185,11 +185,11 @@ Modal agregar cliente
 
               </div>
 
-            </div>
+            </div> -->
 
             <!-- Correo -->
             
-            <div class="form-group">
+            <!-- <div class="form-group">
               
               <div class="input-group">
               
@@ -199,7 +199,7 @@ Modal agregar cliente
 
               </div>
 
-            </div>
+            </div> -->
 
             <!-- Telefono -->
             
@@ -230,7 +230,7 @@ Modal agregar cliente
             </div>
 
              <!-- Fecha Nacimiento -->
-            
+         <!--    
             <div class="form-group">
               
               <div class="input-group">
@@ -241,7 +241,7 @@ Modal agregar cliente
 
               </div>
 
-            </div>
+            </div> -->
   
           </div>
 
@@ -321,7 +321,7 @@ Modal editar
             </div>
 
             <!-- DPI -->
-            
+            <!-- 
             <div class="form-group">
               
               <div class="input-group">
@@ -332,11 +332,11 @@ Modal editar
 
               </div>
 
-            </div>
+            </div> -->
 
             <!-- Correo -->
             
-            <div class="form-group">
+          <!--   <div class="form-group">
               
               <div class="input-group">
               
@@ -346,7 +346,7 @@ Modal editar
 
               </div>
 
-            </div>
+            </div> -->
 
             <!-- Telefono -->
             
@@ -378,7 +378,7 @@ Modal editar
 
              <!-- Fecha de nacimiento -->
             
-            <div class="form-group">
+            <!-- <div class="form-group">
               
               <div class="input-group">
               
@@ -388,7 +388,7 @@ Modal editar
 
               </div>
 
-            </div>
+            </div> -->
   
           </div>
 

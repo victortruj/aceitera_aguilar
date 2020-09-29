@@ -337,7 +337,8 @@
                  <tr>
                   <th style="width: 10px">#</th>
                   <th>Imagen</th>
-                  <th>Código</th>
+                 <!-- eliminar -->
+                 <!--  <th>Código</th> -->
                   <th>Descripcion</th>
                   <th>Stock</th>
                   <th>Acciones</th>
