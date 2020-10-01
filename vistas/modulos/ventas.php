@@ -26,6 +26,18 @@
     
         <button class="btn btn-success">Nueva venta</button>
 </a>
+
+     <button type="button" class="btn btn-success pull-right" id="daterange-btn">
+           
+            <span>
+              <i class="fa fa-calendar"></i> Rango de fecha
+            </span>
+
+            <i class="fa fa-caret-down"></i>
+
+         </button>
+
+
       </div>
 
       <div class="box-body">
@@ -55,10 +67,20 @@
 
         <?php
 
-         $item = null;
-         $valor = null;
+        if(isset($_GET["fechaInicial"])){
 
-         $respuesta = ControladorVentas::ctrMostrarVentas($item, $valor);
+            $fechaInicial = $_GET["fechaInicial"];
+            $fechaFinal = $_GET["fechaFinal"];
+
+          }else{
+
+            $fechaInicial = null;
+            $fechaFinal = null;
+
+          }
+
+
+         $respuesta = ControladorVentas::ctrRangoFechasVentas($fechaInicial, $fechaFinal);
          
         foreach ($respuesta as $key => $value) {
            
