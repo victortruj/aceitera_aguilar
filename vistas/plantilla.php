@@ -51,6 +51,9 @@ PLUGINS DE CSS
     <!-- Daterange picker -->
   <link rel="stylesheet" href="vistas/bower_components/bootstrap-daterangepicker/daterangepicker.css">
 
+  <!-- Morris chart -->
+  <link rel="stylesheet" href="vistas/bower_components/morris.js/morris.css">
+
   <!-- CSS personalizado -->
 
   <link rel="stylesheet" href="vistas/css/estilos.css">
@@ -100,6 +103,11 @@ PLUGINS DE JAVASCRIPT
   <!-- daterangepicker-->
   <script src="vistas/bower_components/moment/min/moment.min.js"></script>
   <script src="vistas/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+
+    <!-- Morris.js charts-->
+  <script src="vistas/bower_components/raphael/raphael.min.js"></script>
+  <script src="vistas/bower_components/morris.js/morris.min.js"></script>
 
 
 
@@ -196,6 +204,7 @@ CUERPO DOCUMENTO
 <script src="vistas/js/productos.js"></script>
 <script src="vistas/js/clientes.js"></script>
 <script src="vistas/js/ventas.js"></script>
+<script src="vistas/js/reportes.js"></script>
 
 
 </body>
