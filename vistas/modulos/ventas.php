@@ -49,8 +49,6 @@
          <tr>
            
            <th style="width:10px">#</th>
-           <!-- eliminar -->
-          <!--  <th>Codigo venta</th> -->
            <th>Cliente</th>
            <th>Vendedor</th>
            <th>Forma de pago</th>

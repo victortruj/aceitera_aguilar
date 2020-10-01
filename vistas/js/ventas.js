@@ -1,4 +1,21 @@
+/*=============================================
+VARIABLE LOCAL STORAGE
+=============================================*/
 
+if(localStorage.getItem("capturarRango") != null){
+
+  $("#daterange-btn span").html(localStorage.getItem("capturarRango"));
+
+
+}else{
+
+  $("#daterange-btn span").html('<i class="fa fa-calendar"></i> Rango de fecha')
+
+}
+
+/*=============================================
+CARGAR LA TABLA DINÁMICA DE VENTAS
+=============================================*/
 
 
  $('.tablaVentas').DataTable( {
