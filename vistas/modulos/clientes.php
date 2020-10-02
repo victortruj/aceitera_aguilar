@@ -45,11 +45,8 @@
            
            <th style="width:10px">#</th>
            <th>Nombre</th>
-          <!--  <th>DPI</th> -->
-           <!-- <th>Correo</th> -->
            <th>Telefono</th>
            <th>Direccion</th>
-           <!-- <th>Fecha nacimiento</th> -->
            <th>Total compras</th>
            <th>Ultima compra</th>
            <th>Ingreso al sistema</th>
@@ -78,15 +75,9 @@
 
                     <td>'.$value["nombre"].'</td>
 
-                 
-
-                   
-
                     <td>'.$value["telefono"].'</td>
 
                     <td>'.$value["direccion"].'</td>
-
-                          
 
                     <td>'.$value["compras"].'</td>
 
@@ -173,34 +164,6 @@ Modal agregar cliente
 
             </div>
 
-            <!--DPI-->
-            
-           <!--  <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-credit-card"></i></span> 
-
-                <input type="number" min="0" class="form-control input-lg" name="nuevoDocumentoId" placeholder="DPI" required>
-
-              </div>
-
-            </div> -->
-
-            <!-- Correo -->
-            
-            <!-- <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span> 
-
-                <input type="email" class="form-control input-lg" name="nuevoEmail" placeholder="Correo" required>
-
-              </div>
-
-            </div> -->
-
             <!-- Telefono -->
             
             <div class="form-group">
@@ -229,20 +192,6 @@ Modal agregar cliente
 
             </div>
 
-             <!-- Fecha Nacimiento -->
-         <!--    
-            <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-calendar-check-o"></i></span> 
-
-                <input type="text" class="form-control input-lg" name="nuevaFechaNacimiento" placeholder="Fecha de nacimiento" data-inputmask="'alias': 'yyyy/mm/dd'" data-mask required>
-
-              </div>
-
-            </div> -->
-  
           </div>
 
         </div>
@@ -320,34 +269,7 @@ Modal editar
 
             </div>
 
-            <!-- DPI -->
-            <!-- 
-            <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-credit-card"></i></span> 
-
-                <input type="number" min="0" class="form-control input-lg" name="editarDocumentoId" id="editarDocumentoId" required>
-
-              </div>
-
-            </div> -->
-
-            <!-- Correo -->
-            
-          <!--   <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span> 
-
-                <input type="email" class="form-control input-lg" name="editarEmail" id="editarEmail" required>
-
-              </div>
-
-            </div> -->
-
+           
             <!-- Telefono -->
             
             <div class="form-group">
@@ -376,21 +298,7 @@ Modal editar
 
             </div>
 
-             <!-- Fecha de nacimiento -->
-            
-            <!-- <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-calendar-check-o"></i></span> 
-
-                <input type="text" class="form-control input-lg" name="editarFechaNacimiento" id="editarFechaNacimiento"  data-inputmask="'alias': 'yyyy/mm/dd'" data-mask required>
-
-              </div>
-
-            </div> -->
-  
-          </div>
+         </div>
 
         </div>
 

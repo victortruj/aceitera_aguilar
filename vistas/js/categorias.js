@@ -40,7 +40,7 @@ $(".tablas").on("click", ".btnEliminarCategoria", function(){
     text: "¡Si no lo está puede cancelar la acción!",
     type: 'warning',
     showCancelButton: true,
-    confirmButtonColor: '#3085d6',
+    confirmButtonColor: '#2d862d',
     cancelButtonColor: '#d33',
     cancelButtonText: 'Cancelar',
     confirmButtonText: 'Si, borrar categoría!'

@@ -69,17 +69,6 @@
                   <td>'.$value["nombre"].'</td>
                   <td>'.$value["usuario"].'</td>';
 
-                  // eliminar
-                  // if($value["foto"] != ""){
-
-                  //   echo '<td><img src="'.$value["foto"].'" class="img-thumbnail" width="40px"></td>';
-
-                  // }else{
-
-                  //   echo '<td><img src="vistas/img/usuarios/default/default.png" class="img-thumbnail" width="40px"></td>';
-
-                  //  }
-
                   echo '<td>'.$value["perfil"].'</td>';
 
                   // activar usuarios

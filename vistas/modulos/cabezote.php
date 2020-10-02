@@ -57,9 +57,15 @@ BARRA DE NAVEGACION
 
 		  <div class="pull-right">
  		
- 		  
+ 		   
+		  <a href="salir" class="btn btn-link"> 
 
-		  <a href="salir" class="btn btn-link"> <div style="color:#000000;">Cerrar sesión <i class="fa  fa-power-off"></i></div>
+		  <div style="color:#000000;"> <b>Cerrar sesión </b>  
+
+		  <i class="fa  fa-power-off" style="color:#FF0000;"></i>
+
+
+		  </div>
 
 		  </a> 
 
@@ -80,3 +86,4 @@ BARRA DE NAVEGACION
  </nav>
 
 </header>
+

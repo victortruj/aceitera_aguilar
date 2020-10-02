@@ -2,16 +2,6 @@
 CARGAR LA TABLA DINÁMICA DE PRODUCTOS
 =============================================*/
 
-// $.ajax({
-
-//  url: "ajax/datatable-productos.ajax.php",
-//  success:function(respuesta){
-    
-//    console.log("respuesta", respuesta);
-
-//  }
-
-// })
 
 $('.tablaProductos').DataTable( {
     "ajax": "ajax/datatable-productos.ajax.php",
@@ -279,7 +269,7 @@ $(".tablaProductos tbody").on("click", "button.btnEliminarProducto", function(){
     text: "¡Si no lo está puede cancelar la accíón!",
     type: 'warning',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
+        confirmButtonColor: '#2d862d',
         cancelButtonColor: '#d33',
         cancelButtonText: 'Cancelar',
         confirmButtonText: 'Si, borrar producto!'
