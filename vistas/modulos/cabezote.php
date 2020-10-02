@@ -43,23 +43,6 @@ BARRA DE NAVEGACION
 
 					<i class="fa fa-user"></i> 
 
-					<!-- eliminar -->
-
-				<!-- 	<?php
-
-					if($_SESSION["foto"] != ""){
-
-					echo '<img src="'.$_SESSION["foto"].'" class="user-image">';
-
-					}else{
-
-
-						echo '<img src="vistas/img/usuarios/default/default.png" class="user-image">';
-
-					}
-
-
-					?>  -->
 
 						 <span class="hidden-xs"><?php  echo $_SESSION["nombre"]; ?></span> <i class="fa fa-caret-down"></i>
 						
@@ -74,11 +57,13 @@ BARRA DE NAVEGACION
 
 		  <div class="pull-right">
  		
- 		
+ 		  
 
-		  <a href="salir" class="btn btn-danger btn-block btn-xs"><i class="fa fa-times"></i> Cerrar sesión</a> 
+		  <a href="salir" class="btn btn-link"> <div style="color:#000000;">Cerrar sesión <i class="fa  fa-power-off"></i></div>
 
-         
+		  </a> 
+
+     
 
         </div>		  		
        

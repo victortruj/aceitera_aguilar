@@ -102,9 +102,8 @@
 
                         <button class="btn btn-success btnEditarUsuario" idUsuario="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarUsuario"><i class="fa fa-pencil-square-o"></i> Modificar</button>
 
-
-
-                       <button class="btn btn-danger btnEliminarUsuario" idUsuario="'.$value["id"].'" fotoUsuario="'.$value["foto"].'" usuario="'.$value["usuario"].'"><i class="fa fa-trash-o"></i> Eliminar</button>
+                         
+                         <button class="btn btn-danger btnEliminarUsuario" idUsuario="'.$value["id"].'" usuario="'.$value["usuario"].'"><i class="fa fa-trash-o"></i> Eliminar</button>
                     
 
                       

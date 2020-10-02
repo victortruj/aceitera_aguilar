@@ -75,7 +75,7 @@ class ControladorUsuarios{
 
 
 						echo '<br>
-							<div class="alert alert-danger">El usuario aún no está activado</div>';
+							<div class="alert alert-danger">El usuario aún no está habilitado</div>';
 
 					}
 
