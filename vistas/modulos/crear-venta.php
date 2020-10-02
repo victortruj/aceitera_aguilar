@@ -55,49 +55,7 @@
 
 </div>
 
- <!--=====================================
-                ENTRADA DEL CÓDIGO
-  ======================================--> 
-
-
-<!-- <div class="form-group">
-    
-    <div class="input-group">
-      
-      <span class="input-group-addon"><i class="fa fa-barcode"></i></span> 
-
- <?php
-
-      $item = null;
-      $valor = null;
-
-      $ventas = ControladorVentas::ctrMostrarVentas($item, $valor);
-
-      if(!$ventas){
-
-      echo '<input type="text" class="form-control" id="nuevaVenta" name="nuevaVenta" value="1001" readonly>';
-                  
-
-      }else{
-
-      foreach ($ventas as $key => $value) {
-                        
-      }
-
-      $codigo = $value["codigo"] + 1;
-
-
-    echo '<input type="text" class="form-control" id="nuevaVenta" name="nuevaVenta" value="'.$codigo.'" readonly>';
-                  
-    }
-
-    ?>
-
- </div>
-
-</div>
- -->
- <!--=====================================
+  <!--=====================================
                 ENTRADA DEL CLIENTE
   ======================================--> 
 
@@ -311,9 +269,7 @@ placeholder="00000" readonly required>
            
            <th style="width:15px">#</th>
            <th>Imagen</th>
-          <!-- eliminar -->
-          <!--  <th>Código</th> -->
-           <th>Descripción</th>
+          <th>Descripción</th>
            <th>Stock</th>
           <th>Acciones</th>
 
@@ -381,34 +337,6 @@ Modal agregar cliente
 
             </div>
 
-            <!--Entrada para el documento DPI-->
-            
-            <!-- <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-credit-card"></i></span> 
-
-                <input type="number" min="0" class="form-control input-lg" name="nuevoDocumentoId" placeholder="DPI" required>
-
-              </div>
-
-            </div>
- -->
-            <!-- Entrada para el Correo electronico -->
-            
-            <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span> 
-
-                <input type="email" class="form-control input-lg" name="nuevoEmail" placeholder="Correo electronico" required>
-
-              </div>
-
-            </div>
-
             <!-- Entrada para el Telefono -->
             
             <div class="form-group">
@@ -437,20 +365,7 @@ Modal agregar cliente
 
             </div>
 
-             <!-- Entrada para la Fecha Nacimiento -->
-            
-            <!-- <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-calendar-check-o"></i></span> 
-
-                <input type="text" class="form-control input-lg" name="nuevaFechaNacimiento" placeholder="Fecha de nacimiento" data-inputmask="'alias': 'yyyy/mm/dd'" data-mask required>
-
-              </div>
-
-            </div>
-   -->
+      
           </div>
 
         </div>
