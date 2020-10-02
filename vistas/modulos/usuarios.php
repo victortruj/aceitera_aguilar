@@ -234,19 +234,6 @@ Modal agregar usuario
 
             </div>
 
-            <!-- Subir foto -->
-
-             <!-- <div class="form-group">
-              
-              <div class="panel">Subir foto</div>
-
-              <input type="file" class="nuevaFoto" name="nuevaFoto">
-
-              <p class="help-block">Maximo 2MB</p>
-
-              <img src="vistas/img/usuarios/default/default.png" class="img-thumbnail previsualizar" width="100px">
-
-            </div> -->
 
           </div>
 
@@ -383,22 +370,7 @@ Modal editar usuario
 
             </div>
 
-            <!-- Subir foto-->
-
-           <!--   <div class="form-group">
-              
-              <div class="panel">Subir foto</div>
-
-              <input type="file" class="nuevaFoto" name="editarFoto">
-
-              <p class="help-block">Maximo 2MB</p>
-
-              <img src="vistas/img/usuarios/default/default.png" class="img-thumbnail previsualizar" width="100px">
-
-              <input type="hidden" name="fotoActual" id="fotoActual">
-
-            </div> -->
-
+           
           </div>
 
         </div>
