@@ -62,16 +62,22 @@ class TablaProductos{
  	 		TRAEMOS LAS ACCIONES
   			=============================================*/ 
 
-		  	$botones = "<div class='btn-group-xs'><button class='btn btn-success btnEditarProducto' idProducto='".$productos[$i]["id"]."' data-toggle='modal' data-target='#modalEditarProducto'><i class='fa fa-pencil-square-o'></i> Modificar</button><button class='btn btn-danger btnEliminarProducto' idProducto='".$productos[$i]["id"]."' codigo='".$productos[$i]["codigo"]."' imagen='".$productos[$i]["imagen"]."'><i class='fa fa-trash-o'></i> Eliminar</button></div>"; 
+	if(isset($_GET["perfilOculto"]) && $_GET["perfilOculto"] == "Bodega"){
+  		
+		  	$botones = "<div class='btn-group-xs'><button class='btn btn-success btnEditarProducto' idProducto='".$productos[$i]["id"]."' data-toggle='modal' data-target='#modalEditarProducto'><i class='fa fa-pencil-square-o'></i> Modificar</button></div>";
+
+      
+           }else{
+
+                 
+		  	$botones = "<div class='btn-group-xs'><button class='btn btn-success btnEditarProducto' idProducto='".$productos[$i]["id"]."' data-toggle='modal' data-target='#modalEditarProducto'><i class='fa fa-pencil-square-o'></i> Modificar</button><button class='btn btn-danger btnEliminarProducto' idProducto='".$productos[$i]["id"]."' codigo='".$productos[$i]["codigo"]."' imagen='".$productos[$i]["imagen"]."'><i class='fa fa-trash-o'></i> Eliminar</button></div>";  
 
 
-// "'.$productos[$i]["precio_compra"].'",
-
+           }
 
 		  	$datosJson .='[
 			      "'.($i+1).'",
 			      "'.$imagen.'",
-			      
 			      "'.$productos[$i]["descripcion"].'",
 			      "'.$categorias["categoria"].'",
 			      "'.$stock.'",

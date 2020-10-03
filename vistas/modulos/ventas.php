@@ -1,3 +1,19 @@
+<?php
+
+if($_SESSION["perfil"] == "Bodega"){
+
+  echo '<script>
+
+    window.location = "inicio";
+
+  </script>';
+
+  return;
+
+}
+
+?>
+
 <div class="content-wrapper">
 
   <section class="content-header">
@@ -110,15 +126,19 @@
 
                   <td>
 
-                    <div class="btn-group-xs">
+                    <div class="btn-group-xs">';
                         
-                     
-                      <button class="btn btn-success btnEditarVenta" idVenta="'.$value["id"].'"><i class="fa fa-pencil-square-o"> Modificar</i></button>
+                     if ($_SESSION["perfil"] == "Administrador") {
 
-                      <button class="btn btn-danger btnEliminarVenta" idVenta="'.$value["id"].'"><i class="fa fa-trash-o"></i> Eliminar</button>
+                    echo '<button class="btn btn-success btnEditarVenta" idVenta="'.$value["id"].'"><i class="fa fa-pencil-square-o"> Modificar</i></button>
 
 
-                    </div>  
+                      <button class="btn btn-danger btnEliminarVenta" idVenta="'.$value["id"].'"><i class="fa fa-trash-o"></i> Eliminar</button>';
+
+                       
+                        }
+
+                   echo '</div>  
 
                   </td>
 

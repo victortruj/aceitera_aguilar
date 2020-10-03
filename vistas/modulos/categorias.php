@@ -1,3 +1,19 @@
+<?php
+
+if($_SESSION["perfil"] == "Vendedor"){
+
+  echo '<script>
+
+    window.location = "inicio";
+
+  </script>';
+
+  return;
+
+}
+
+?>
+
 <div class="content-wrapper">
 
   <section class="content-header">
@@ -69,11 +85,16 @@
 
                       <div class="btn-group-xs">
                           
-                        <button class="btn btn-success btnEditarCategoria" idCategoria="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarCategoria"><i class="fa fa-pencil-square-o"></i> Modificar</button>
+                        <button class="btn btn-success btnEditarCategoria" idCategoria="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarCategoria"><i class="fa fa-pencil-square-o"></i> Modificar</button>';
 
-                        <button class="btn btn-danger btnEliminarCategoria" idCategoria="'.$value["id"].'"><i class="fa fa-trash-o"></i> Eliminar</button>
 
-                      </div>  
+                  if ($_SESSION["perfil"] == "Administrador") {
+
+                     echo '<button class="btn btn-danger btnEliminarCategoria" idCategoria="'.$value["id"].'"><i class="fa fa-trash-o"></i> Eliminar</button>';
+
+                   }
+
+                     echo '</div>  
 
                     </td>
 

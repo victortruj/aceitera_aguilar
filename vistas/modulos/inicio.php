@@ -34,14 +34,41 @@
 
         <?php 
 
+          if ($_SESSION["perfil"] == "Administrador") {
+            
+          
 
           include "reportes/grafico-ventas.php";
 
+          }
 
          ?>
 
-
       </div>
+
+        <div class="col-lg-10">
+          
+     <?php 
+
+   if ($_SESSION["perfil"] == "Bodega" || $_SESSION["perfil"] == "Vendedor"  ) {
+     
+      echo '<div class="box box-success">
+
+
+      <h1>Hola. '.$_SESSION["nombre"].', Bienvenid@ al sistema.</h1>
+
+
+      </div>';
+       
+
+   }
+
+
+      ?>
+
+
+
+        </div>
 
 
      </div>
