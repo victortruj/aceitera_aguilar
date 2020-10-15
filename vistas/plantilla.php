@@ -103,6 +103,9 @@ PLUGINS DE JAVASCRIPT
   <!-- daterangepicker-->
   <script src="vistas/bower_components/moment/min/moment.min.js"></script>
   <script src="vistas/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+  
+
+
 
 
     <!-- Morris.js charts-->
@@ -205,6 +208,7 @@ CUERPO DOCUMENTO
 <script src="vistas/js/clientes.js"></script>
 <script src="vistas/js/ventas.js"></script>
 <script src="vistas/js/reportes.js"></script>
+
 
 
 </body>

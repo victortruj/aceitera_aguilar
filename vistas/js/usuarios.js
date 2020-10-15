@@ -27,12 +27,6 @@ $(document).on("click", ".btnEditarUsuario", function(){
 
       $("#passwordActual").val(respuesta["password"]);
 
-      if(respuesta["foto"] != ""){
-
-        $(".previsualizar").attr("src", respuesta["foto"]);
-
-      }
-
     }
 
   });
@@ -126,7 +120,7 @@ $("#nuevoUsuario").change(function(){
         
         if(respuesta){
 
-          $("#nuevoUsuario").parent().after('<div class="alert alert-warning">Este usuario ya existe en la base de datos</div>');
+          $("#nuevoUsuario").parent().after('<div class="alert alert-warning">Este usuario ya existe</div>');
 
           $("#nuevoUsuario").val("");
 

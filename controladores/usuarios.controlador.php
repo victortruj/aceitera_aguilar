@@ -120,13 +120,10 @@ class ControladorUsuarios{
 			 				   );
 			 				      
 
-
-
-					$respuesta = ModeloUsuarios::mdlIngresarUsuario($tabla, $datos);
+				$respuesta = ModeloUsuarios::mdlIngresarUsuario($tabla, $datos);
 
 
 								if($respuesta == "ok"){
-
 
 				echo '<script>
 

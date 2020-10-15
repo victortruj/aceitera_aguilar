@@ -1,12 +1,13 @@
+
 <?php
 
 require_once "conexion.php";
 
 class ModeloVentas{
 
-/*=============================================
+	/*=============================================
 	MOSTRAR VENTAS
-=============================================*/
+	=============================================*/
 
 	static public function mdlMostrarVentas($tabla, $item, $valor){
 
@@ -42,9 +43,9 @@ class ModeloVentas{
 
 	static public function mdlIngresarVenta($tabla, $datos){
 
-		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(id_cliente, id_vendedor, productos, impuesto, neto, total, metodo_pago) VALUES (:codigo, :id_cliente, :id_vendedor, :productos, :impuesto, :neto, :total, :metodo_pago)");
+		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(codigo, id_cliente, id_vendedor, productos, impuesto, neto, total, metodo_pago) VALUES (:codigo, :id_cliente, :id_vendedor, :productos, :impuesto, :neto, :total, :metodo_pago)");
 
-		// $stmt->bindParam(":codigo", $datos["codigo"], PDO::PARAM_INT);
+		$stmt->bindParam(":codigo", $datos["codigo"], PDO::PARAM_INT);
 		$stmt->bindParam(":id_cliente", $datos["id_cliente"], PDO::PARAM_INT);
 		$stmt->bindParam(":id_vendedor", $datos["id_vendedor"], PDO::PARAM_INT);
 		$stmt->bindParam(":productos", $datos["productos"], PDO::PARAM_STR);
@@ -99,7 +100,6 @@ class ModeloVentas{
 		$stmt = null;
 
 	}
-
 
 	/*=============================================
 	ELIMINAR VENTA

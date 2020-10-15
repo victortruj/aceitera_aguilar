@@ -286,3 +286,39 @@ $(".tablaProductos tbody").on("click", "button.btnEliminarProducto", function(){
 
 })
   
+/*=============================================
+REVISAR que la categoria este regstrada
+=============================================*/
+
+$("#nuevaDescripcion").change(function(){
+
+  $(".alert").remove();
+
+  var descripcion = $(this).val();
+
+  var datos = new FormData();
+  datos.append("validarDescripcion", descripcion);
+
+   $.ajax({
+      url:"ajax/productos.ajax.php",
+      method:"POST",
+      data: datos,
+      cache: false,
+      contentType: false,
+      processData: false,
+      dataType: "json",
+      success:function(respuesta){
+       
+
+        if(respuesta){
+
+          $("#nuevaDescripcion").parent().after('<div class="alert alert-warning">Esta categoria ya existe</div>');
+
+           $("#nuevaDescripcion").val("");
+
+        }
+
+      }
+
+  })
+})

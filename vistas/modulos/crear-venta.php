@@ -53,6 +53,51 @@ if($_SESSION["perfil"] == "Bodega"){
               <div class="box">
 
  <!--=====================================
+                ENTRADA DEL CÓDIGO
+     ======================================--> 
+
+            <div class="form-group">
+                  
+                  <div class="input-group">
+                    
+                    <span class="input-group-addon"><i class="fa fa-slack"></i></span>
+
+                    <?php
+
+                    $item = null;
+                    $valor = null;
+
+                    $ventas = ControladorVentas::ctrMostrarVentas($item, $valor);
+
+                    if(!$ventas){
+
+                      echo '<input type="text" class="form-control" id="nuevaVenta" name="nuevaVenta" value="1" readonly>';
+                  
+
+                    }else{
+
+                      foreach ($ventas as $key => $value) {
+                        
+                        
+                      
+                      }
+
+                      $codigo = $value["codigo"] + 1;
+
+
+
+                      echo '<input type="text" class="form-control" id="nuevaVenta" name="nuevaVenta" value="'.$codigo.'" readonly>';
+                  
+
+                    }
+
+                    ?>
+                    
+</div>
+</div>
+
+
+ <!--=====================================
                 ENTRADA DEL VENDEDOR
   ======================================-->
 
@@ -70,6 +115,8 @@ if($_SESSION["perfil"] == "Bodega"){
 
 </div>
 
+
+ 
   <!--=====================================
                 ENTRADA DEL CLIENTE
   ======================================--> 
@@ -84,7 +131,6 @@ if($_SESSION["perfil"] == "Bodega"){
   <select class="form-control" id="seleccionarCliente" name="seleccionarCliente" required>
 
       <option value="">Seleccionar cliente</option>
-
 
     <?php
 

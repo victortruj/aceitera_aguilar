@@ -2,9 +2,9 @@
 
 class ControladorVentas{
 
-/*=============================================
+	/*=============================================
 	MOSTRAR VENTAS
-=============================================*/
+	=============================================*/
 
 	static public function ctrMostrarVentas($item, $valor){
 
@@ -28,6 +28,29 @@ class ControladorVentas{
 			ACTUALIZAR LAS COMPRAS DEL CLIENTE Y REDUCIR EL STOCK Y AUMENTAR LAS VENTAS DE LOS PRODUCTOS
 			=============================================*/
 
+			if($_POST["listaProductos"] == ""){
+
+					echo'<script>
+
+				swal({
+					  type: "error",
+					  title: "La venta no se ha ejecuta si no hay productos",
+					  showConfirmButton: true,
+					  confirmButtonText: "Cerrar"
+					  }).then(function(result){
+								if (result.value) {
+
+								window.location = "ventas";
+
+								}
+							})
+
+				</script>';
+
+				return;
+			}
+
+
 			$listaProductos = json_decode($_POST["listaProductos"], true);
 
 			$totalProductosComprados = array();
@@ -40,18 +63,19 @@ class ControladorVentas{
 
 			    $item = "id";
 			    $valor = $value["id"];
+			    $orden = "id";
 
-			    $traerProducto = ModeloProductos::mdlMostrarProductos($tablaProductos, $item, $valor);
+			    $traerProducto = ModeloProductos::mdlMostrarProductos($tablaProductos, $item, $valor, $orden);
 
 				$item1a = "ventas";
 				$valor1a = $value["cantidad"] + $traerProducto["ventas"];
 
-		    $nuevasVentas = ModeloProductos::mdlActualizarProducto($tablaProductos, $item1a, $valor1a, $valor);
+			    $nuevasVentas = ModeloProductos::mdlActualizarProducto($tablaProductos, $item1a, $valor1a, $valor);
 
 				$item1b = "stock";
 				$valor1b = $value["stock"];
 
-			$nuevoStock = ModeloProductos::mdlActualizarProducto($tablaProductos, $item1b, $valor1b, $valor);
+				$nuevoStock = ModeloProductos::mdlActualizarProducto($tablaProductos, $item1b, $valor1b, $valor);
 
 			}
 
@@ -85,6 +109,7 @@ class ControladorVentas{
 
 			$datos = array("id_vendedor"=>$_POST["idVendedor"],
 						   "id_cliente"=>$_POST["seleccionarCliente"],
+						   "codigo"=>$_POST["nuevaVenta"],
 						   "productos"=>$_POST["listaProductos"],
 						   "impuesto"=>$_POST["nuevoPrecioImpuesto"],
 						   "neto"=>$_POST["nuevoPrecioNeto"],
@@ -104,7 +129,7 @@ class ControladorVentas{
 					  title: "La venta ha sido guardada correctamente",
 					  showConfirmButton: true,
 					  confirmButtonText: "Cerrar"
-					  }).then((result) => {
+					  }).then(function(result){
 								if (result.value) {
 
 								window.location = "ventas";
@@ -168,8 +193,9 @@ class ControladorVentas{
 
 					$item = "id";
 					$valor = $value["id"];
+					$orden = "id";
 
-					$traerProducto = ModeloProductos::mdlMostrarProductos($tablaProductos, $item, $valor);
+					$traerProducto = ModeloProductos::mdlMostrarProductos($tablaProductos, $item, $valor, $orden);
 
 					$item1a = "ventas";
 					$valor1a = $traerProducto["ventas"] - $value["cantidad"];
@@ -211,8 +237,9 @@ class ControladorVentas{
 
 					$item_2 = "id";
 					$valor_2 = $value["id"];
+					$orden = "id";
 
-					$traerProducto_2 = ModeloProductos::mdlMostrarProductos($tablaProductos_2, $item_2, $valor_2);
+					$traerProducto_2 = ModeloProductos::mdlMostrarProductos($tablaProductos_2, $item_2, $valor_2, $orden);
 
 					$item1a_2 = "ventas";
 					$valor1a_2 = $value["cantidad"] + $traerProducto_2["ventas"];
@@ -236,7 +263,7 @@ class ControladorVentas{
 				$item1a_2 = "compras";
 				$valor1a_2 = array_sum($totalProductosComprados_2) + $traerCliente_2["compras"];
 
-		$comprasCliente_2 = ModeloClientes::mdlActualizarCliente($tablaClientes_2, $item1a_2, $valor1a_2, $valor_2);
+				$comprasCliente_2 = ModeloClientes::mdlActualizarCliente($tablaClientes_2, $item1a_2, $valor1a_2, $valor_2);
 
 				$item1b_2 = "ultima_compra";
 
@@ -246,7 +273,7 @@ class ControladorVentas{
 				$hora = date('H:i:s');
 				$valor1b_2 = $fecha.' '.$hora;
 
-		$fechaCliente_2 = ModeloClientes::mdlActualizarCliente($tablaClientes_2, $item1b_2, $valor1b_2, $valor_2);
+				$fechaCliente_2 = ModeloClientes::mdlActualizarCliente($tablaClientes_2, $item1b_2, $valor1b_2, $valor_2);
 
 			}
 
@@ -256,7 +283,7 @@ class ControladorVentas{
 
 			$datos = array("id_vendedor"=>$_POST["idVendedor"],
 						   "id_cliente"=>$_POST["seleccionarCliente"],
-						   
+						   "codigo"=>$_POST["editarVenta"],
 						   "productos"=>$listaProductos,
 						   "impuesto"=>$_POST["nuevoPrecioImpuesto"],
 						   "neto"=>$_POST["nuevoPrecioNeto"],
@@ -292,6 +319,8 @@ class ControladorVentas{
 		}
 
 	}
+
+
 /*=============================================
 	ELIMINAR VENTA
 =============================================*/

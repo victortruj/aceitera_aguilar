@@ -59,6 +59,23 @@
 
                 ?>
 
+
+                 <!--=====================================
+                ENTRADA DEL CÓDIGO
+                ======================================--> 
+
+                <div class="form-group">
+                  
+                  <div class="input-group">
+                    
+                    <span class="input-group-addon"><i class="fa fa-slack"></i></span>
+
+                   <input type="text" class="form-control" id="nuevaVenta" name="editarVenta" value="<?php echo $venta["codigo"]; ?>" readonly>
+               
+                  </div>
+                
+                </div>
+
                 <!--=====================================
                 ENTRADA DEL VENDEDOR
                 ======================================-->
@@ -76,6 +93,10 @@
                   </div>
 
                 </div> 
+
+
+                
+               
 
                <!--=====================================
                 ENTRADA DEL CLIENTE

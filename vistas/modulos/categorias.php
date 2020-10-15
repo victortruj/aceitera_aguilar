@@ -79,7 +79,7 @@ if($_SESSION["perfil"] == "Vendedor"){
 
                     <td>'.($key+1).'</td>
 
-                    <td class="text-uppercase">'.$value["categoria"].'</td>
+                    <td>'.$value["categoria"].'</td>
 
                     <td>
 
@@ -155,7 +155,7 @@ Modal agregar categoria
               
                 <span class="input-group-addon"><i class="fa fa-align-left"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevaCategoria" placeholder="Categoría" required>
+                <input type="text" class="form-control input-lg" name="nuevaCategoria" placeholder="Categoría" id="nuevaCategoria" required>
 
               </div>
 
@@ -235,6 +235,7 @@ Modal editar categoria
                 <input type="text" class="form-control input-lg" name="editarCategoria" id="editarCategoria" required>
 
                  <input type="hidden"  name="idCategoria" id="idCategoria" required>
+
 
               </div>
 

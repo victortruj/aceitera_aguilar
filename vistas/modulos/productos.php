@@ -57,6 +57,7 @@ if($_SESSION["perfil"] == "Vendedor"){
            
            <th style="width:15px">#</th>
            <th>Imagen</th>
+           <th>codigo</th>
            <th>Descripción</th>
            <th>Categoría</th>
            <th>Productos</th>
@@ -170,7 +171,7 @@ Modal agregar producto
               
                 <span class="input-group-addon"><i class="fa fa-pinterest-p"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevaDescripcion" placeholder="Descripción" required>
+                <input type="text" class="form-control input-lg" name="nuevaDescripcion" placeholder="Descripción" id="nuevaDescripcion" required>
 
               </div>
 
